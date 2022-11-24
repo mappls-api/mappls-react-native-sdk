@@ -1,0 +1,56 @@
+{
+  "name": "vector_map",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "build": "build_debug_offline.sh"
+  },
+  "dependencies": {
+    "@gorhom/bottom-sheet": "^2.3.0",
+    "@react-native-community/checkbox": "^0.5.7",
+    "@react-native-community/masked-view": "^0.1.7",
+    "@react-native-community/netinfo": "^6.2.1",
+    "@react-native-community/toolbar-android": "^0.2.1",
+    "@react-navigation/native": "^5.1.1",
+    "@react-navigation/stack": "^5.2.3",
+    "@turf/turf": "^5.1.6",
+    "mappls-nearby-widget-react-native": "1.0.0",
+    "mappls-direction-widget-react-native": "1.0.0",
+    "mappls-geofence-widget-react-native": "1.0.0",
+    "mappls-map-react-native": "1.0.2",
+    "mappls-search-widgets-react-native": "1.0.1",
+    "mappls-polyline": "1.0.0",
+    "radio-buttons-react-native": "^1.0.4",
+    "react": "17.0.2",
+    "react-native": "0.66.5",
+    "react-native-android-location-enabler": "^1.2.1",
+    "react-native-color-picker": "^0.6.0",
+    "react-native-elements": "^1.2.7",
+    "react-native-gesture-handler": "^1.6.1",
+    "react-native-reanimated": "^1.7.0",
+    "react-native-safe-area-context": "^0.7.3",
+    "react-native-screens": "^2.4.0",
+    "react-native-simple-toast": "^1.0.0",
+    "react-native-vector-icons": "^6.6.0",
+    "reanimated-bottom-sheet": "^1.0.0-alpha.22"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/helper-module-transforms": "^7.12.5",
+    "@babel/runtime": "^7.13.9",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.14.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "react-test-renderer": "17.0.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

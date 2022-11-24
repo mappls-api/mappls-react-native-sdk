@@ -16,12 +16,14 @@ Powered with India's most comprehensive and robust mapping functionalities.
 
 | Version | Supported SDK Version |  
 | ---- | ---- | 
+| [v1.0.1](docs/v1.0.1/README.md) | - Map SDK v1.0.3 <br/> - Place Search Widget v1.0.1 <br/> - GeoFence Widget v1.0.0 <br/> - Direction Widget v1.0.0 <br/> - Nearby UI Widget v1.0.0 <br/> - Mappls Polyline v1.0.0 | 
 | [v1.0.0](./README.md) | - Map SDK v1.0.0 <br/> - Place Search Widget v1.0.0 <br/> - GeoFence Widget v1.0.0 <br/> - Direction Widget v1.0.0 <br/> - Nearby UI Widget v1.0.0 <br/> - Mappls Polyline v1.0.0 |  
 
 ## [Version History](#Version-History)
 
 | Version | Last Updated | Author |  Release Note|  
 | ---- | ---- | ---- | ---- |
+| v1.0.3 | 24 November 2022 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Bug Fixes |
 | v1.0.2 | 28 August 2022 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |   - Added Place click callback <br/> - Update Place detail API <br/> - Bug Fixes |
 | v1.0.1 | 8 September 2022 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |   - Bug Fixes|
 | v1.0.0 | 24 August 2022 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |   -Initial release  |

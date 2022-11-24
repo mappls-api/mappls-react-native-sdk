@@ -1,0 +1,5 @@
+rootProject.name = 'vector_map'
+//include ':mapmyindia-restapi-react-native-beta'
+//project(':mapmyindia-restapi-react-native-beta').projectDir = new File(rootProject.projectDir, '../node_modules/mapmyindia-restapi-react-native-beta/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
