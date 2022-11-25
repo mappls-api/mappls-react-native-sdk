@@ -36,7 +36,9 @@
 | regionWillChangeDebounceTime | `number` | `10` | `false` | The emitted frequency of regionwillchange events |
 | regionDidChangeDebounceTime | `number` | `500` | `false` | The emitted frequency of regiondidchange events |
 | didLoadedMapplsMapsStyles | `func` | `none` | `false` | Provide list of Available Mappls Style |
-| onMapError| `func` | `none` | `false` | This event is triggered when some error occurred during map loading.[For Details](https://github.com/mappls-api/mappls-android-sdk/blob/main/docs/v1.0.1/SDK-Error-code.md) | 
+| onMapError| `func` | `none` | `false` | This event is triggered when some error occurred during map loading.[For Details](https://github.com/mappls-api/mappls-android-sdk/blob/main/docs/v1.0.1/SDK-Error-code.md) |
+| onPlaceClick | `func` | `none` | `false` | Provide Mappls pin on click of label |
+
 
 ### methods
 #### getPointInView(coordinate)
