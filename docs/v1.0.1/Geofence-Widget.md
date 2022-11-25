@@ -80,7 +80,7 @@ MapplsGL.setAtlasClientId(atlasClientId);//your atlasClientId key
 MapplsGL.setAtlasClientSecret(atlasClientSecret); //your atlasClientSecret key
 ```
 
-#### Step 3:  Open MapmyIndiaGeoFence Widget  
+#### Step 3:  Open MapplsGeoFence Widget  
 
 ```javascript
 MapplsGeoFence.openGeoFenceWidget({minRadius: 2000,  maxRadius: 10000})
