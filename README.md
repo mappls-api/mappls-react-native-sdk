@@ -1,4 +1,3 @@
-
 [<img src="https://about.mappls.com/images/mappls-b-logo.svg" height="60"/> </p>](https://www.mapmyindia.com/api)
 
 # Mappls React Native SDK
@@ -54,7 +53,18 @@ For more details of previous versions , [click here](docs/v1.0.1/Version-History
         * [Nearby Places](docs/v1.0.1/Search-Api.md#nearby-places)
         * [Place Detail](docs/v1.0.1/Search-Api.md#place-details)
         * [POI Along the Route](docs/v1.0.1/Search-Api.md#poi-along-the-route)
+    * [Routes & Navigation API](docs/v1.0.1/Routing-Api.md)
+        * [Routing API](docs/v1.0.1/Routing-Api.md#routing-api)
+        * [Driving Distance Matrix API](docs/v1.0.1/Routing-Api.md#driving-distance-matrix-api)
+- [Mappls Search Widget](docs/v1.0.1/Place-Autocomplete.md)
+    * [Getting Started](docs/v1.0.1/Place-Autocomplete.md#getting-started)
+    * [Place Picker](docs/v1.0.1/Place-Autocomplete.md#placepicker)
+    * [Search Widget](docs/v1.0.1/Place-Autocomplete.md#search-widget)
+- [Mappls Geofence Widget](docs/v1.0.1/Geofence-Widget.md)
+- [Mappls Direction Widget](docs/v1.0.1/Direction-Widget.md)
+- [Mappls Nearby Widget](docs/v1.0.1/Nearby-Widget.md)
 - [Country List](https://github.com/mappls-api/mappls-rest-apis/blob/main/docs/countryISO.md)
+
 <br><br><br>
 
 For any queries and support, please contact: 

@@ -51,6 +51,16 @@ For more details of previous versions , [click here](docs/v1.0.1/Version-History
         * [Nearby Places](./Search-Api.md#nearby-places)
         * [Place Detail](./Search-Api.md#place-details)
         * [POI Along the Route](./Search-Api.md#poi-along-the-route)
+    * [Routes & Navigation API](./Routing-Api.md)
+        * [Routing API](./Routing-Api.md#routing-api)
+        * [Driving Distance Matrix API](./Routing-Api.md#driving-distance-matrix-api)
+- [Mappls Search Widget](./Place-Autocomplete.md)
+    * [Getting Started](./Place-Autocomplete.md#getting-started)
+    * [Place Picker](./Place-Autocomplete.md#placepicker)
+    * [Search Widget](./Place-Autocomplete.md#search-widget)
+- [Mappls Geofence Widget](./Geofence-Widget.md)
+- [Mappls Direction Widget](./Direction-Widget.md)
+- [Mappls Nearby Widget](./Nearby-Widget.md)
 - [Country List](https://github.com/mappls-api/mappls-rest-apis/blob/main/docs/countryISO.md)
 
 <br><br><br>
