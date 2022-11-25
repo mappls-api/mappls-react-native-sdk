@@ -73,6 +73,91 @@ MapplsGL.RestApi.autoSuggest({
 3. `location(string)`: the name of the location to which the nearby will run in context to.
 4. `hyperLink(string)`: the ready-made link for the nearby API pre-initialized with all default parameters and location with code to search for.
 
+## [Geocode](#geocode)
+Our Geocoding API converts real addresses into these geographic coordinates (latitude/longitude) to be placed on a map, be it for any street, area, postal code, POI or a house number etc.
+
+~~~javascript
+MapplsGL.RestApi.geocode({address: placeName})
+    .then(response => {
+        //Handle Response
+    })
+    .catch(error => {
+        //Handle Error
+    });
+~~~
+### Request Parameter
+#### Mandatory Parameters
+1. `address(string)`:  address to be geocoded e.g. 237 Okhla industrial estate phase 3 new delhi, delhi 110020.
+
+#### Optional Parameters
+1. `itemCount(number)`: parameter can be set to get maximum number of result items from the API (default: 1).
+
+### Response Parameter
+1. `results(Array<GeoCode>)`: All the details regarding place.
+
+#### GeoCode Result Response parameter
+1. `houseNumber(string)`: the houseNumber of the address/location
+2. `houseName(string)`: houseName of the address/location
+3. `poi(string)`: the point of interest or famous landmark nearby the location
+4. `street(string)`: the street or road of the location
+5. `subSubLocality(string)`: the subSubLocality of the location
+6. `subLocality(string)`: the subLocality of the location
+7. `locality(string)`: the locality of the location
+8. `village(string)`: the village of the location
+9. `subDistrict(string)`: the subDistrict of the location
+10. `district(string)`: the district of the location
+11. `city(string)`: the city of the location
+12. `state(string)`: the state of the location
+13. `pincode(string)`: the pincode of the location
+14. `formattedAddress(string)`: the general protocol following address
+15. `mapplsPin(string)`: mappls pin of the particular location
+16. `latitude(number)`: the latitude for the location.
+17. `longitude(number)`: the longitude for the location.
+18. `geocodeLevel(string)`: the best matched address component.
+
+## [Reverse Geocode](#reverse-geocode)
+Reverse Geocoding is a process to give the closest matching address to a provided geographical coordinates (latitude/longitude). Mappls reverse geocoding API provides real addresses along with nearest popular landmark for any such geo-positions on the map.
+
+~~~javascript
+ MapplsGL.RestApi.reverseGeocode({latitude: lat, longitude: lng})
+      .then(response => {
+        // Handle Response
+      })
+      .catch(error => {
+        // Handle Error
+      });
+~~~
+
+### Request Parameter
+1. `latitude(number)`: the latitude of the location for which the address is required.
+2. `longitude(number)`: the longitude of the location for which the address is required.
+
+### Response Paramter 
+1. `responseCode(number)`: Response codes of the api.
+2. `version(string)`: Version of the Api.
+3. `results(Array<Place>)`: All the details regarding place.
+
+#### Place Result Response parameter
+1. `houseNumber(string)`: the houseNumber of the address/location
+2. `houseName(string)`: houseName of the address/location
+3. `poi(string)`: the point of interest or famous landmark nearby the location
+4. `poi_dist(string)`: distance from nearest POI in metres.
+5. `street(string)`: the street or road of the location
+6. `street_dist(string)`: distance from nearest Street in metres.
+7. `subSubLocality(string)`: the subSubLocality of the location
+8. `subLocality(string)`: the subLocality of the location
+9. `locality(string)`: the locality of the location
+10. `village(string)`: the village of the location
+11. `district(string)`: the district of the location
+12. `subDistrict(string)`: the subDistrict of the location
+13. `city(string)`: the city of the location
+14. `state(string)`: the state of the location
+15. `pincode(string)`: the pincode of the location
+16. `lat(string)`: the latitude for the location.
+17. `lng(string)`: the longitude for the location.
+18. `formatted_address(string)`: the general protocol following address
+19. `area(string)`: the area of the location.
+
 
 <br><br><br>
  
