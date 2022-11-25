@@ -158,6 +158,165 @@ Reverse Geocoding is a process to give the closest matching address to a provide
 18. `formatted_address(string)`: the general protocol following address
 19. `area(string)`: the area of the location.
 
+## [Nearby Places](#nearby-places)
+Nearby Places API, enables you to add discovery and search of nearby POIs by searching for a generic keyword used to describe a category of places or via the unique code assigned to that category.
+
+~~~javascript
+MapplsGL.RestApi.nearby({
+      keyword: keyword,
+      location: location
+    }) .then(response => {
+        // Handle Response
+      })
+      .catch(error => {
+        // Handle Error
+      });
+~~~
+### Request Parameters
+#### Mandatory Parameters
+1. `keyword(string)`: performs search on the basis of provided keyword For eg: coffee, EV Charging Station etc
+2. `location(string)`: Provide the location around which the search will be performed
+    - `location` also support mappls pin e.g., location: "MMI000"
+
+#### Optional parameters
+1. `page(number)`: provides number of the page to provide results from.
+2. `radius(number)`: provides the range of distance to search over(default: 1000, min: 500, max: 10000)
+3. `pod(string)`: it takes in the place type code which helps in restricting the results to certain chosen type. Access to this parameter is controlled from the backend. This parameter if provided will override any values provided in keywords request param.
+4. `bounds(string)`: Allows the developer to send in map bounds to provide a nearby search within the bounds. {e.g. (bounds: "28.56812,77.240519;28.532790,77.290854")
+5. `filter(string)`:This parameter helps you get a specific type of EV charging Station
+    - filter = model:(string);brandId:(string);plugType:(string)
+6. `richData(boolean)`: rich data related to poi
+7. `sortBy(string)`: provides configured sorting operations for the client on cloud. **Below are the available sorts:**
+    - `MapplsGL.RestApi.NearbyCriteria.DISTANCE_ASCENDING`
+    - `MapplsGL.RestApi.NearbyCriteria.DISTANCE_DESCENDING`
+    - `MapplsGL.RestApi.NearbyCriteria.NAME_ASCENDING`
+    - `MapplsGL.RestApi.NearbyCriteria.NAME_DESCENDING`
+8. `userName(string)`: Use to set the user name
+
+### Response Parameter
+1. `suggestedLocations(Array<NearbyAtlasResult>)`: List of nearby places
+2. `pageInfo(PageInfo)`
+
+#### NearbyAtlasResult Response parameter
+1. `distance(number)`: provides the distance from the provided location bias in meters.
+2. `mapplsPin(string)`: Place Id of the location 6-char alphanumeric.
+3. `email(string)`: Email for contact.
+4. `entryLatitude(number)`: latitude of the entrance of the location.
+5. `entryLongitude(number)`: longitude of the entrance of the location.
+6. `keywords(Array<string>)`: provides an array of matched keywords or codes.
+7. `landlineNo(string)`: Email for contact.
+8. `latitude(number)`: Latitude of the location.
+9. `longitude(number)`: Longitude of the location.
+10. `mobileNo(string)`: Phone number for contact.
+11. `orderIndex(string)`:  the order where this result should be placed
+12. `placeAddress(string)`: Address of the location.
+13. `placeName(string)`: Name of the location.
+14. `type(string)`: Type of location POI or Country or City.
+15. `city(string)`: City of the location
+16. `state(string)`: State of the location
+17. `pincode(string)`: Pincode of the location
+18. `hourOfOperation(string)`: The hours of operation of the POI in a day.
+19. `addressTokens(AddressTokens)`
+
+#### AddressTokens Response Result parameter
+1. `houseNumber(string)`: house number of the location.
+2. `houseName(string)`: house name of the location.
+3. `poi(string)`: name of the POI (if applicable)
+4. `street(string)`: name of the street. (if applicable)
+5. `subSubLocality(string)`: the sub-sub-locality to which the location belongs. (if applicable)
+6. `subLocality(string)`: the sub-locality to which the location belongs. (if applicable)
+7. `locality(string)`: the locality to which the location belongs. (if applicable)
+8. `village(string)`: the village to which the location belongs. (if applicable)
+9. `subDistrict(string)`: the sub-district to which the location belongs. (if applicable)   
+10. `district(string)`: the district to which the location belongs. (if applicable)
+11. `city(string)`: the city to which the location belongs. (if applicable)
+12. `state(string)`: the state to which the location belongs. (if applicable)
+13. `pincode(string)`: the PIN code to which the location belongs. (if applicable)
+
+#### PageInfo Response Result Parameter
+1. `pageCount(number)`: The number of pages with results.
+2. `totalHits(number)`: Total number of places in the results.
+3. `totalPages(number)`: Total number of pages as per page size and no of results.  
+4. `pageSize(number)`: The number of results per page.
+
+## [Place Details](#place-details)
+Mappls Place Details is a simple, standardized and precise pan-India digital address system. Every location has been assigned a unique digital address or an mapplsPin. The mapplsPin API can be used to extract the details of a place with the help of its mapplsPinn i.e. a 6 digit code or a place_id.
+
+~~~javascript
+MapplsGL.RestApi.placeDetail(
+    {mapplsPin: "MMI000"}
+    ).then(response => {
+        // Handle Response
+      })
+      .catch(error => {
+        // Handle Error
+      });
+~~~
+
+### Request Parameters
+#### Mandatory Parameter
+1. `mapplsPin(string)`: the id or mapplsPin of the place whose details are required. The 6-digit alphanumeric code for any location. (e.g. mmi000).
+
+### Response Parameters
+1. `mapplsPin(string)`: 6 characters alphanumeric unique identifier
+2. `latitude(number)`: The latitude of the location.
+3. `longitude(number)`: The longitude of the location.
+
+**Note: Not all response parameters are available by default. These parameters are restricted and available as per the discussed use case. For details, please contact Mappls API support.**
+
+## [POI Along the Route](#poi-along-the-route)
+With POI Along the Route API user will be able to get the details of POIs of a particular category along his set route. The main focus of this API is to provide convenience to the user and help him in locating the place of his interest on his set route.
+
+~~~javascript
+MapplsGL.RestApi.POIAlongRoute({
+      path: path,
+      category: keyword,
+      buffer: 300,
+      geometries: 'polyline6',
+      page: 1,
+    }).then(response => {
+        // Handle Response
+      })
+      .catch(error => {
+        // Handle Error
+      });
+~~~
+### Request Parameter
+#### Mandatory Parameter
+1. `category(string)`: The POI category code to be searched. Only one category input supported.
+2. `path(string)`: This parameter takes the encoded route along which POIs to be searched.
+
+#### Optional Paramter
+1. `buffer(number)`: Buffer of the road. Minimum value is `25`, maximum is `1000` and default is `25`.
+2. `geometries(string)`: Type of geometry encoding.
+3. `page(number)`: Used for pagination. By default, a request returns maximum `10` results and to get the next `10` or so on pass the page value accordingly. Default is 1.
+4. `sort(boolean)`: Gets the sorted POIs along route.
+
+### Response Parameter
+1. `suggestedPOIs(Array<SuggestedPOI>)`: List of Suggested POI location
+
+#### SuggestedPOI Response parameter
+1. `distance(number)`: distance of the POI.
+2. `mapplsPin(string)`: mapplsPin of the POI.
+3. `poi(string)`: Name of the POI.
+4. `subSubLocality(string)`: Sub sub locality of the POI.
+5. `subLocality(string)`: Sub locality of the POI.
+6. `locality(string)`: Locality of the POI.
+7. `city(string)`: City of the POI.
+8. `subDistrict(string)`: Sub district of the POI.
+9. `district(string)`: District of the POI.
+10. `state(string)`: State of the POI.
+11. `poplrName(string)`: Popular name of the POI.
+12. `address(string)`: Address of the POI.
+13. `tel(string)`: Telephone number of the POI.
+14. `email(string)`: Email of the POI.
+15. `website(string)`: Website of the POI.
+16. `longitude(string)`: Longitude of the POI.
+17. `latitude(string)`:  Latitude of the POI.
+18. `e_lng(number)`: Entry longitude of the POI.
+19. `e_lat(number)`: Entry latitude of the POI.
+20. `brand_code(string)`: Brand id of the POI.
+
 
 <br><br><br>
  

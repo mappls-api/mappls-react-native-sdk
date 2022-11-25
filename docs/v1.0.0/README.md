@@ -48,6 +48,9 @@ For more details of previous versions , [click here](docs/v1.0.1/Version-History
         * [Auto Suggest](./Search-Api.md#auto-suggest)
         * [Geocode](./Search-Api.md#geocode)
         * [Reverse Geocode](./Search-Api.md#reverse-geocode)
+        * [Nearby Places](./Search-Api.md#nearby-places)
+        * [Place Detail](./Search-Api.md#place-details)
+        * [POI Along the Route](./Search-Api.md#poi-along-the-route)
 - [Country List](https://github.com/mappls-api/mappls-rest-apis/blob/main/docs/countryISO.md)
 
 <br><br><br>

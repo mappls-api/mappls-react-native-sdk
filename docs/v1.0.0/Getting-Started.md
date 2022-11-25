@@ -63,7 +63,7 @@ allprojects {
         google()
         jcenter()
         maven { url "https://jitpack.io" }
-+       maven { url 'https://maven.mapmyindia.com/repository/mapmyindia/'}
++       maven { url 'https://maven.mappls.com/repository/mappls/'}
         maven {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
             url "$rootDir/../node_modules/react-native/android"
@@ -82,7 +82,7 @@ however we need to add some additional lines to `build.gradle`.
 We need to add an additional repository in order to get our dependencies.
 
 * `https://jitpack.io`
-* `https://maven.mapmyindia.com/repository/mapmyindia/ `
+* `https://maven.mappls.com/repository/mappls/ `
 ```diff
 allprojects {
     repositories {
@@ -90,7 +90,7 @@ allprojects {
         google()
         jcenter()
 +       maven { url "https://jitpack.io" }
-+       maven { url 'https://maven.mapmyindia.com/repository/mapmyindia/'}
++       maven { url 'https://maven.mappls.com/repository/mappls/'}
         maven {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
             url "$rootDir/../node_modules/react-native/android"
@@ -127,7 +127,7 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
     implementation "com.facebook.react:react-native:+"  // From node_modules
-+   implementation project(':mapmyindia-map-react-native-beta')
++   implementation project(':mappls-map-react-native')
 }
 ```
 
