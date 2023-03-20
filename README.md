@@ -10,7 +10,7 @@ Powered with India's most comprehensive and robust mapping functionalities.
 
 2. The sample code is provided to help you understand the basic functionality of Mappls maps & REST APIs working on **React Native** native development platform.
 
-4. Explore through [200+ countries & territories](https://github.com/MapmyIndia/mapmyindia-rest-api/blob/master/docs/countryISO.md) with **Global Search, Routing and Mapping APIs & SDKs** by Mappls.
+4. Explore through [200+ countries & territories](https://github.com/mappls-api/mappls-rest-apis/blob/main/docs/countryISO.md) with **Global Search, Routing and Mapping APIs & SDKs** by Mappls.
 
 ## [Documentation History](#Documentation-History)
 
