@@ -31,7 +31,7 @@ Powered with India's most comprehensive and robust mapping functionalities.
 For more details of previous versions , [click here](docs/v1.0.1/Version-History.md).
 
 ## [Table Of Content](#Table-Of-Content)
-- [Vector Android Map](docs/v1.0.1/Getting-Started.md)
+- [Vector Map](docs/v1.0.1/Getting-Started.md)
     * [Getting Started](docs/v1.0.1/Getting-Started.md#getting-started)
     * [Installation](docs/v1.0.1/Getting-Started.md#installation)
     * [Add Import](docs/v1.0.1/Getting-Started.md#added-import)
