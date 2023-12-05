@@ -26,7 +26,6 @@ Powered with India's most comprehensive and robust mapping functionalities.
 | v1.0.1 | 8 September 2022 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |   - Bug Fixes|
 | v1.0.0 | 24 August 2022 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |   -Initial release  |
 
-For more details of previous versions , [click here](docs/v1.0.1/Version-History.md).
 
 ## [Table Of Content](#Table-Of-Content)
 - [Vector Android Map](./Getting-Started.md)

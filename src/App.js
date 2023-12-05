@@ -21,10 +21,9 @@ LogBox.ignoreLogs([
 
 const Stack = createStackNavigator();
 
-const atlasClientId =
-  '';
-const atlasClientSecret =
-  '';
+
+const atlasClientId ='';
+const atlasClientSecret ='';
 const mapSDKKey = '';
 const restAPIKey = '';
 

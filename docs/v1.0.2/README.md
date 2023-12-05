@@ -15,19 +15,22 @@ Powered with India's most comprehensive and robust mapping functionalities.
 ## [Documentation History](#Documentation-History)
 
 | Version | Supported SDK Version |  
-| ---- | ---- | 
-| [v1.0.1](docs/v1.0.1/README.md) | - Map SDK v1.0.3 <br/> - Place Search Widget v1.0.1 <br/> - GeoFence Widget v1.0.0 <br/> - Direction Widget v1.0.0 <br/> - Nearby UI Widget v1.0.0 <br/> - Mappls Polyline v1.0.0 | 
-| [v1.0.0](./README.md) | - Map SDK v1.0.0 <br/> - Place Search Widget v1.0.0 <br/> - GeoFence Widget v1.0.0 <br/> - Direction Widget v1.0.0 <br/> - Nearby UI Widget v1.0.0 <br/> - Mappls Polyline v1.0.0 |  
+| ---- | ---- |    
+| [v1.0.2](../v1.0.2/README.md) | - Map SDK v1.0.7 <br/> - Place Search Widget v1.1.0 <br/> - GeoFence Widget v1.0.0 <br/> - Direction Widget v1.1.0 <br/> - Nearby UI Widget v1.0.0 <br/> - Mappls Polyline v1.0.0 |  
+| [v1.0.1](../v1.0.1/README.md) | - Map SDK v1.0.3 <br/> - Place Search Widget v1.0.1 <br/> - GeoFence Widget v1.0.0 <br/> - Direction Widget v1.0.0 <br/> - Nearby UI Widget v1.0.0 <br/> - Mappls Polyline v1.0.0 | 
+| [v1.0.0](../v1.0.0/README.md) | - Map SDK v1.0.0 <br/> - Place Search Widget v1.0.0 <br/> - GeoFence Widget v1.0.0 <br/> - Direction Widget v1.0.0 <br/> - Nearby UI Widget v1.0.0 <br/> - Mappls Polyline v1.0.0 |  
 
 ## [Version History](#Version-History)
 
 | Version | Last Updated | Author |  Release Note|  
 | ---- | ---- | ---- | ---- |
+| v1.0.7 | 05 June 2023 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Security Improvements   <br/>  - Bug Fixes & Improvements  |
+| v1.0.6 | 05 June 2023 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Added `Cost Estimation` Api <br/>  - Bug Fixes  |
+| v1.0.5 | 02 May 2023 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Added `responseLang` parameter in Autosuggest <br/>  - Added `lang` parameter in reverse geocode <br/>  - Bug Fixes  |
+| v1.0.4 | 12 April 2023 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Bug Fixes |
 | v1.0.3 | 24 November 2022 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Bug Fixes |
-| v1.0.2 | 28 August 2022 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |   - Added Place click callback <br/> - Update Place detail API <br/> - Bug Fixes |
-| v1.0.1 | 8 September 2022 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |   - Bug Fixes|
-| v1.0.0 | 24 August 2022 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |   -Initial release  |
 
+For more details of previous versions , [click here](../v1.0.2/Version-History.md).
 
 ## [Table Of Content](#Table-Of-Content)
 - [Vector Android Map](./Getting-Started.md)
@@ -44,6 +47,12 @@ Powered with India's most comprehensive and robust mapping functionalities.
     * [Camera](./Camera.md)
     * [User Location](./User-Location.md)
     * [Images](./Images.md)
+- [Mappls Traffic Overlay](./Traffic-Vector-Overlay.md)
+- [Set Country Regions](./Set-Regions.md)
+- [Set Mappls Map Style](./Set-Style.md)
+    * [List of Available Styles](./Set-Style.md#list-of-available-styles)
+    * [Set Mappls Style](./Set-Style.md#set-mappls-style)
+    * [To enable/disable last selected style](./Set-Style.md#to-enabledisable-last-selected-style)
 - Rest API Kit
     * [Search API's](./Search-Api.md)
         * [Auto Suggest](./Search-Api.md#auto-suggest)
@@ -55,6 +64,8 @@ Powered with India's most comprehensive and robust mapping functionalities.
     * [Routes & Navigation API](./Routing-Api.md)
         * [Routing API](./Routing-Api.md#routing-api)
         * [Driving Distance Matrix API](./Routing-Api.md#driving-distance-matrix-api)
+    * [Weather Api](./Weather-API.md)
+    * [Nearby Reports](./Nearby-Report.md)
 - [Mappls Search Widget](./Place-Autocomplete.md)
     * [Getting Started](./Place-Autocomplete.md#getting-started)
     * [Place Picker](./Place-Autocomplete.md#placepicker)
@@ -62,6 +73,8 @@ Powered with India's most comprehensive and robust mapping functionalities.
 - [Mappls Geofence Widget](./Geofence-Widget.md)
 - [Mappls Direction Widget](./Direction-Widget.md)
 - [Mappls Nearby Widget](./Nearby-Widget.md)
+- [SDK Error Codes](./SDK-Error-code.md)
+- [Version History](./Version-History.md)
 - [Country List](https://github.com/mappls-api/mappls-rest-apis/blob/main/docs/countryISO.md)
 
 <br><br><br>

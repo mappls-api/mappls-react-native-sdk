@@ -186,8 +186,17 @@ android {
         }
     }
 
+    configurations.configureEach {
+        resolutionStrategy {
+            force 'org.jetbrains.kotlin:kotlin-stdlib:1.8.0'
+            force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0'
+        }
+    }
+
     configurations.all {
         resolutionStrategy {
+            force 'org.jetbrains.kotlin:kotlin-stdlib:1.8.0'
+            force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0'
             force 'androidx.appcompat:appcompat:1.1.0'
         }
     }

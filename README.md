@@ -16,6 +16,7 @@ Powered with India's most comprehensive and robust mapping functionalities.
 
 | Version | Supported SDK Version |  
 | ---- | ---- |    
+| [v1.0.2](docs/v1.0.2/README.md) | - Map SDK v1.0.7 <br/> - Place Search Widget v1.1.0 <br/> - GeoFence Widget v1.0.0 <br/> - Direction Widget v1.1.0 <br/> - Nearby UI Widget v1.0.0 <br/> - Mappls Polyline v1.0.0 |  
 | [v1.0.1](docs/v1.0.1/README.md) | - Map SDK v1.0.3 <br/> - Place Search Widget v1.0.1 <br/> - GeoFence Widget v1.0.0 <br/> - Direction Widget v1.0.0 <br/> - Nearby UI Widget v1.0.0 <br/> - Mappls Polyline v1.0.0 | 
 | [v1.0.0](docs/v1.0.0/README.md) | - Map SDK v1.0.0 <br/> - Place Search Widget v1.0.0 <br/> - GeoFence Widget v1.0.0 <br/> - Direction Widget v1.0.0 <br/> - Nearby UI Widget v1.0.0 <br/> - Mappls Polyline v1.0.0 |  
 
@@ -23,46 +24,57 @@ Powered with India's most comprehensive and robust mapping functionalities.
 
 | Version | Last Updated | Author |  Release Note|  
 | ---- | ---- | ---- | ---- |
+| v1.0.7 | 05 June 2023 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Security Improvements   <br/>  - Bug Fixes & Improvements  |
+| v1.0.6 | 05 June 2023 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Added `Cost Estimation` Api <br/>  - Bug Fixes  |
+| v1.0.5 | 02 May 2023 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Added `responseLang` parameter in Autosuggest <br/>  - Added `lang` parameter in reverse geocode <br/>  - Bug Fixes  |
+| v1.0.4 | 12 April 2023 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Bug Fixes |
 | v1.0.3 | 24 November 2022 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Bug Fixes |
-| v1.0.2 | 28 August 2022 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |   - Added Place click callback <br/> - Update Place detail API <br/> - Bug Fixes |
-| v1.0.1 | 8 September 2022 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |   - Bug Fixes|
-| v1.0.0 | 24 August 2022 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |   -Initial release  |
 
-For more details of previous versions , [click here](docs/v1.0.1/Version-History.md).
+For more details of previous versions , [click here](docs/v1.0.2/Version-History.md).
 
 ## [Table Of Content](#Table-Of-Content)
-- [Vector Map](docs/v1.0.1/Getting-Started.md)
-    * [Getting Started](docs/v1.0.1/Getting-Started.md#getting-started)
-    * [Installation](docs/v1.0.1/Getting-Started.md#installation)
-    * [Add Import](docs/v1.0.1/Getting-Started.md#added-import)
-    * [Add your API keys to the SDK](docs/v1.0.1/Getting-Started.md#add-your-api-keys-to-the-sdk)
-    * [Add a Mappls Map to your application](docs/v1.0.1/Getting-Started.md#add-a-mappls-map-to-your-application)
+- [Vector Map](docs/v1.0.2/Getting-Started.md)
+    * [Getting Started](docs/v1.0.2/Getting-Started.md#getting-started)
+    * [Installation](docs/v1.0.2/Getting-Started.md#installation)
+    * [Add Import](docs/v1.0.2/Getting-Started.md#added-import)
+    * [Add your API keys to the SDK](docs/v1.0.2/Getting-Started.md#add-your-api-keys-to-the-sdk)
+    * [Add a Mappls Map to your application](docs/v1.0.2/Getting-Started.md#add-a-mappls-map-to-your-application)
 - Component
-    * [MapView](docs/v1.0.1/Map-View.md)
-    * [Light](docs/v1.0.1/Light.md)
-    * [Point Annotation](docs/v1.0.1/Point-Annotation.md)
-    * [Callout](docs/v1.0.1/Callout.md)
-    * [Camera](docs/v1.0.1/Camera.md)
-    * [User Location](docs/v1.0.1/User-Location.md)
-    * [Images](docs/v1.0.1/Images.md)
+    * [MapView](docs/v1.0.2/Map-View.md)
+    * [Light](docs/v1.0.2/Light.md)
+    * [Point Annotation](docs/v1.0.2/Point-Annotation.md)
+    * [Callout](docs/v1.0.2/Callout.md)
+    * [Camera](docs/v1.0.2/Camera.md)
+    * [User Location](docs/v1.0.2/User-Location.md)
+    * [Images](docs/v1.0.2/Images.md)
+- [Mappls Traffic Overlay](docs/v1.0.2/Traffic-Vector-Overlay.md)
+- [Set Country Regions](docs/v1.0.2/Set-Regions.md)
+- [Set Mappls Map Style](docs/v1.0.2/Set-Style.md)
+    * [List of Available Styles](docs/v1.0.2/Set-Style.md#list-of-available-styles)
+    * [Set Mappls Style](docs/v1.0.2/Set-Style.md#set-mappls-style)
+    * [To enable/disable last selected style](docs/v1.0.2/Set-Style.md#to-enabledisable-last-selected-style)
 - Rest API Kit
-    * [Search API's](docs/v1.0.1/Search-Api.md)
-        * [Auto Suggest](docs/v1.0.1/Search-Api.md#auto-suggest)
-        * [Geocode](docs/v1.0.1/Search-Api.md#geocode)
-        * [Reverse Geocode](docs/v1.0.1/Search-Api.md#reverse-geocode)
-        * [Nearby Places](docs/v1.0.1/Search-Api.md#nearby-places)
-        * [Place Detail](docs/v1.0.1/Search-Api.md#place-details)
-        * [POI Along the Route](docs/v1.0.1/Search-Api.md#poi-along-the-route)
-    * [Routes & Navigation API](docs/v1.0.1/Routing-Api.md)
-        * [Routing API](docs/v1.0.1/Routing-Api.md#routing-api)
-        * [Driving Distance Matrix API](docs/v1.0.1/Routing-Api.md#driving-distance-matrix-api)
-- [Mappls Search Widget](docs/v1.0.1/Place-Autocomplete.md)
-    * [Getting Started](docs/v1.0.1/Place-Autocomplete.md#getting-started)
-    * [Place Picker](docs/v1.0.1/Place-Autocomplete.md#placepicker)
-    * [Search Widget](docs/v1.0.1/Place-Autocomplete.md#search-widget)
-- [Mappls Geofence Widget](docs/v1.0.1/Geofence-Widget.md)
-- [Mappls Direction Widget](docs/v1.0.1/Direction-Widget.md)
-- [Mappls Nearby Widget](docs/v1.0.1/Nearby-Widget.md)
+    * [Search API's](docs/v1.0.2/Search-Api.md)
+        * [Auto Suggest](docs/v1.0.2/Search-Api.md#auto-suggest)
+        * [Geocode](docs/v1.0.2/Search-Api.md#geocode)
+        * [Reverse Geocode](docs/v1.0.2/Search-Api.md#reverse-geocode)
+        * [Nearby Places](docs/v1.0.2/Search-Api.md#nearby-places)
+        * [Place Detail](docs/v1.0.2/Search-Api.md#place-details)
+        * [POI Along the Route](docs/v1.0.2/Search-Api.md#poi-along-the-route)
+    * [Routes & Navigation API](docs/v1.0.2/Routing-Api.md)
+        * [Routing API](docs/v1.0.2/Routing-Api.md#routing-api)
+        * [Driving Distance Matrix API](docs/v1.0.2/Routing-Api.md#driving-distance-matrix-api)
+    * [Weather Api](docs/v1.0.2/Weather-API.md)
+    * [Nearby Reports](docs/v1.0.2/Nearby-Report.md)
+- [Mappls Search Widget](docs/v1.0.2/Place-Autocomplete.md)
+    * [Getting Started](docs/v1.0.2/Place-Autocomplete.md#getting-started)
+    * [Place Picker](docs/v1.0.2/Place-Autocomplete.md#placepicker)
+    * [Search Widget](docs/v1.0.2/Place-Autocomplete.md#search-widget)
+- [Mappls Geofence Widget](docs/v1.0.2/Geofence-Widget.md)
+- [Mappls Direction Widget](docs/v1.0.2/Direction-Widget.md)
+- [Mappls Nearby Widget](docs/v1.0.2/Nearby-Widget.md)
+- [SDK Error Codes](docs/v1.0.2/SDK-Error-code.md)
+- [Version History](docs/v1.0.2/Version-History.md)
 - [Country List](https://github.com/mappls-api/mappls-rest-apis/blob/main/docs/countryISO.md)
 
 <br><br><br>

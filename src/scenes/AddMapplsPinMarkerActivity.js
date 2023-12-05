@@ -5,7 +5,7 @@ import {DEFAULT_CENTER_COORDINATE} from '../utils/index';
 import exampleIcon from '../assets/marker.png';
 import Toast from 'react-native-simple-toast';
 
-class AddElocMarkerActivity extends Component {
+class AddMapplsPinMarkerActivity extends Component {
   
 
 
@@ -31,4 +31,4 @@ class AddElocMarkerActivity extends Component {
   }
 }
 
-export default AddElocMarkerActivity;
+export default AddMapplsPinMarkerActivity;

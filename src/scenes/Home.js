@@ -20,7 +20,7 @@ import NearbyActivity from './NearbyActivity';
 import ReverseGeoCodeActivity from './ReverseGeoCodeActivity';
 import SemiCircleActivity from './SemiCircleActivity';
 import CameraElocActvity from './CameraElocActivity';
-import AddElocMarkerActivity from './AddElocMarkerActivity';
+import AddMapplsPinMarkerActivity from './AddMapplsPinMarkerActivity';
 import CameraElocBoundsActvity from './CameraElocBoundsActivity'
 import TrackingAnimationActivity from './TrackingAnimationActivity'
 import DirectionWidgetActivity from './DirectionWidgetActivity'
@@ -33,6 +33,8 @@ import GeoAnalyticsActvity from './GeoAnalyticsActivity';
 import IndoorActivity  from './IndoorActivity';
 import PoiAlongTheRouteActivity from './PoiAlongTheRouteActivity';
 import HateOsNearbyActivity from './HateOsNearbyActivity';
+import AnimatedMarker from './AnimatedMarker';
+import DrawCirclePolygonActivity from './DrawCirclePolygonActivity';
 
 const styles = StyleSheet.create({
   header: {
@@ -76,10 +78,12 @@ const Examples = [
   new ExampleItem('Map Tap', MapTapActivity),
   new ExampleItem('Map Long Tap', MapLongTapActivity),
   new ExampleItem('Add Marker', AddMarkerActivity),
-  new ExampleItem('Add Mappls Pin Marker', AddElocMarkerActivity),
+  new ExampleItem('Add Mappls Pin Marker', AddMapplsPinMarkerActivity),
   new ExampleItem('Add Custom Marker', AddCustomMakerActivity),
+  new ExampleItem('Marker Animation', AnimatedMarker),
   new ExampleItem('Draw PolyLine', DrawPolylineActivity),
   new ExampleItem('Draw Polygon', DrawPolygonActivity),
+  new ExampleItem('Draw Circle Polygon', DrawCirclePolygonActivity),
   new ExampleItem('Draw Gradient Polyline', DrawGradientPolyline),
   new ExampleItem('Current Location', CurrentLocationActivity),
   new ExampleItem('Auto Suggest', AutoSuggestActivity),
