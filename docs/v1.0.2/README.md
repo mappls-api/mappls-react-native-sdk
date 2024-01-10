@@ -2,7 +2,7 @@
 
 # Mappls React Native SDK
 
-**Easy To Integrate Maps & Location APIs & SDKs For Android Applications**
+**Easy To Integrate Maps & Location APIs & SDKs For Android & IOS Applications**
 
 Powered with India's most comprehensive and robust mapping functionalities.
 
