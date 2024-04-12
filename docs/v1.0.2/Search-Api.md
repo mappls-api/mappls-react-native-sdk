@@ -44,13 +44,11 @@ MapplsGL.RestApi.autoSuggest({
 #### ELocation Response Result Parameter
 1. `mapplsPin(String)`: Mappls Pin of the location 6-char alphanumeric.
 2. `placeAddress(String)`:Address of the location.
-3. `latitude(number)`: Latitude of the location.
-4. `longitude(number)`: longitude of the location.
-5. `type(String)`: type of location POI or Country or City
-6. `placeName(string)`: Name of the location.
-7. `addressTokens(AddressTokens)`
-8. `orderIndex(number)`: the order where this result should be placed
-9. `distance(number)`: aerial distance in meters from reference location
+3. `type(String)`: type of location POI or Country or City
+4. `placeName(string)`: Name of the location.
+5. `addressTokens(AddressTokens)`
+6. `orderIndex(number)`: the order where this result should be placed
+7. `distance(number)`: aerial distance in meters from reference location
 
 #### AddressTokens Response Result parameter
 1. `houseNumber(string)`: house number of the location.
@@ -153,10 +151,8 @@ Reverse Geocoding is a process to give the closest matching address to a provide
 13. `city(string)`: the city of the location
 14. `state(string)`: the state of the location
 15. `pincode(string)`: the pincode of the location
-16. `lat(string)`: the latitude for the location.
-17. `lng(string)`: the longitude for the location.
-18. `formatted_address(string)`: the general protocol following address
-19. `area(string)`: the area of the location.
+16. `formatted_address(string)`: the general protocol following address
+17. `area(string)`: the area of the location.
 
 ## [Nearby Places](#nearby-places)
 Nearby Places API, enables you to add discovery and search of nearby POIs by searching for a generic keyword used to describe a category of places or via the unique code assigned to that category.
@@ -201,22 +197,18 @@ MapplsGL.RestApi.nearby({
 1. `distance(number)`: provides the distance from the provided location bias in meters.
 2. `mapplsPin(string)`: Place Id of the location 6-char alphanumeric.
 3. `email(string)`: Email for contact.
-4. `entryLatitude(number)`: latitude of the entrance of the location.
-5. `entryLongitude(number)`: longitude of the entrance of the location.
-6. `keywords(Array<string>)`: provides an array of matched keywords or codes.
-7. `landlineNo(string)`: Email for contact.
-8. `latitude(number)`: Latitude of the location.
-9. `longitude(number)`: Longitude of the location.
-10. `mobileNo(string)`: Phone number for contact.
-11. `orderIndex(string)`:  the order where this result should be placed
-12. `placeAddress(string)`: Address of the location.
-13. `placeName(string)`: Name of the location.
-14. `type(string)`: Type of location POI or Country or City.
-15. `city(string)`: City of the location
-16. `state(string)`: State of the location
-17. `pincode(string)`: Pincode of the location
-18. `hourOfOperation(string)`: The hours of operation of the POI in a day.
-19. `addressTokens(AddressTokens)`
+4. `keywords(Array<string>)`: provides an array of matched keywords or codes.
+5. `landlineNo(string)`: Email for contact.
+6.  `mobileNo(string)`: Phone number for contact.
+7.  `orderIndex(string)`:  the order where this result should be placed
+8.  `placeAddress(string)`: Address of the location.
+9.  `placeName(string)`: Name of the location.
+10. `type(string)`: Type of location POI or Country or City.
+11. `city(string)`: City of the location
+12. `state(string)`: State of the location
+13. `pincode(string)`: Pincode of the location
+14. `hourOfOperation(string)`: The hours of operation of the POI in a day.
+15. `addressTokens(AddressTokens)`
 
 #### AddressTokens Response Result parameter
 1. `houseNumber(string)`: house number of the location.
@@ -311,11 +303,7 @@ MapplsGL.RestApi.POIAlongRoute({
 13. `tel(string)`: Telephone number of the POI.
 14. `email(string)`: Email of the POI.
 15. `website(string)`: Website of the POI.
-16. `longitude(string)`: Longitude of the POI.
-17. `latitude(string)`:  Latitude of the POI.
-18. `e_lng(number)`: Entry longitude of the POI.
-19. `e_lat(number)`: Entry latitude of the POI.
-20. `brand_code(string)`: Brand id of the POI.
+16. `brand_code(string)`: Brand id of the POI.
 
 <br><br><br>
  
