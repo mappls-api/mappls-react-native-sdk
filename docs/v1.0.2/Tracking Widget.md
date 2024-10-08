@@ -217,23 +217,26 @@ MapplsGL.setAtlasClientSecret(atlasClientSecret); //your atlasClientSecret key
 1.  `speedInMillis(number)`: To set the animation speed in milliseconds.
 2.  `resource(string)`: To set the route resource. Default to "route_eta".
 3.  `profile(string)`: To set the profile for the route. Default to "driving".
-5.  `trackingIcon(string)`: To set the tracking icon (like a RiderIcon) in the north-up direction on a map.
-6.  `trackingIconSize(number)`: To set the tracking icon size.
+4.  `trackingIcon(string)`: To set the tracking icon (like a RiderIcon) in the north-up direction on a map.
+5.  `trackingIconSize(number)`: To set the tracking icon size.
   
-7.  `routeChangeBuffer(number)`: The distance defined for call reroute for the provided current location.
-8.  `polylineRefresh(boolean)`: To remove the route at the same time as the rider progresses along the route.
-9.  `latentViz(boolean)`: To set the boolean value for smooth visualization when rider suddenly jumps off-route. Incurs an additional routing call.// default false
-10. `latentVizRadius(number)`:
-11.  `cameraZoomLevel(number)`: To set the camera zoom level.
-12.  `fitBoundsPadding (number)`: To set the padding for the fitbound.// default 80
-13.  `fitBoundsDuration(number)`: To set the duration for the fitbound.// default 1000 millis
-14.  `enableDestinationRouteConnector (boolean)`:  To set boolean value for hide/show connector line from the last route point on road to actual input destination coordinate // default false
-15. `trackingSegmentCompleteCallback(trackingData: TrackingData)` : retrieve the remaining distance, you can access the relevant data within the trackingData object that the callback provides. For example...
-~~~javascript
- trackingSegmentCompleteCallback={(event:any) => {
-            console.log("remainingDistance", JSON.stringify(event))
-          }}
-~~~
+6.  `routeChangeBuffer(number)`: The distance defined for call reroute for the provided current location.
+7.  `polylineRefresh(boolean)`: To remove the route at the same time as the rider progresses along the route.
+8.  `latentViz(boolean)`: To set the boolean value for smooth visualization when rider suddenly jumps off-route. Incurs an additional routing call.// default false
+9. `latentVizRadius(number)`:
+10.  `cameraZoomLevel(number)`: To set the camera zoom level.
+11.  `fitBoundsPadding (number)`: To set the padding for the fitbound.// default 80
+12.  `fitBoundsDuration(number)`: To set the duration for the fitbound.// default 1000 millis
+13.  `enableDestinationRouteConnector (boolean)`:  To set boolean value for hide/show connector line from the last route point on road to actual input destination coordinate // default false
+14. `trackingSegmentCompleteCallback(trackingData: TrackingData)` : retrieve the remaining distance, you can access the relevant data within the trackingData object that the callback provides. For example...
+    ```js
+    trackingSegmentCompleteCallback={(event:any) => {
+                console.log("remainingDistance", JSON.stringify(event))
+              }}
+    ```
+15. `enableSim` (boolean): enable or disable rider simulation when rider location is inconsistent.
+16. `maxSimDis` (number): maximum distance till which simulation will be active after the last location injected into the widget.
+17. `simSpeed` (number): This value is speed in metres/sec at which the rider simulation will be started at. The ride simulation will be slowed at a defined rate below this speed after every few metres to enable a very smooth and slow animation till the time a fresh active location is injected tot the widget or max simulation distance is reached.
 
 ###  Method calls :- 
 
