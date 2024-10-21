@@ -128,7 +128,7 @@ MapplsGL.setAtlasClientSecret(atlasClientSecret); //your atlasClientSecret key
           profile='driving'
           routeChangeBuffer={50}
           trackingIcon={carIcon}
-          latentViz={false}
+          latentViz='jump'
           polylineRefresh={false}
           cameraZoomLevel={14}
           routePolylineStyle={layerStyle.routePolylineStyle}
@@ -222,7 +222,7 @@ MapplsGL.setAtlasClientSecret(atlasClientSecret); //your atlasClientSecret key
   
 6.  `routeChangeBuffer(number)`: The distance defined for call reroute for the provided current location.
 7.  `polylineRefresh(boolean)`: To remove the route at the same time as the rider progresses along the route.
-8.  `latentViz(boolean)`: To set the boolean value for smooth visualization when rider suddenly jumps off-route. Incurs an additional routing call.// default false
+8.  `latentViz(string)`: To set the string value for smooth visualization when rider suddenly jumps off-route. Incurs an additional routing call.// [Acceptable values for this is : jump,fly & route]
 9. `latentVizRadius(number)`:
 10.  `cameraZoomLevel(number)`: To set the camera zoom level.
 11.  `fitBoundsPadding (number)`: To set the padding for the fitbound.// default 80
@@ -237,7 +237,7 @@ MapplsGL.setAtlasClientSecret(atlasClientSecret); //your atlasClientSecret key
 15. `enableSim` (boolean): enable or disable rider simulation when rider location is inconsistent.
 16. `maxSimDis` (number): maximum distance till which simulation will be active after the last location injected into the widget.
 17. `simSpeed` (number): This value is speed in metres/sec at which the rider simulation will be started at. The ride simulation will be slowed at a defined rate below this speed after every few metres to enable a very smooth and slow animation till the time a fresh active location is injected tot the widget or max simulation distance is reached.
-
+18. `lastRiderLocation`(number[array]): This parameter is used to pass the last known location (long,lat) coordinates of the rider. 
 ###  Method calls :- 
 
 - #### For Start Tracking
