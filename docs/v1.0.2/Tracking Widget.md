@@ -252,6 +252,34 @@ MapplsGL.setAtlasClientSecret(atlasClientSecret); //your atlasClientSecret key
             console.log("trackingEventCallback",eventName + ":::::::" + eventValue)
           }}
     ```
+    ```
+Note : Event names & its important values: 
+- updateWithinBuffer : 
+~~~javascript
+{
+    "activity_name": "updateWithinBuffer",
+    //& other key-val pairs
+    },
+    "url": {
+      "roadDistanceInMeter": 128.9532915267954,
+      "aerial": 128.86231315761427
+    }
+  }
+~~~
+- updateOutsideBuffer : 
+   ~~~javascript
+   {
+    "activity_name": "updateOutsideBuffer",
+    // & other key-val pairs
+    },
+    "url": {
+      "latentViz": "jump",
+      "aerialDistance": 288.5067313683827,
+      "routeRecompute": "Route calculated successfully"
+    }
+  }
+   ~~~
+    ```
 ###  Method calls :- 
 
 - #### For Start Tracking
