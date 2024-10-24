@@ -143,6 +143,9 @@ MapplsGL.setAtlasClientSecret(atlasClientSecret); //your atlasClientSecret key
           trackingSegmentCompleteCallback={(event:any) => {
             console.log("response", JSON.stringify(event))
           }}
+           trackingEventCallback={(eventName:any,eventValue:any) =>{
+            console.log("trackingEventCallback",eventName + ":::::::" + eventValue)
+          }}
         />
 ```
 ### Mandatory Request Properties
@@ -237,7 +240,18 @@ MapplsGL.setAtlasClientSecret(atlasClientSecret); //your atlasClientSecret key
 15. `enableSim` (boolean): enable or disable rider simulation when rider location is inconsistent.
 16. `maxSimDis` (number): maximum distance till which simulation will be active after the last location injected into the widget.
 17. `simSpeed` (number): This value is speed in metres/sec at which the rider simulation will be started at. The ride simulation will be slowed at a defined rate below this speed after every few metres to enable a very smooth and slow animation till the time a fresh active location is injected tot the widget or max simulation distance is reached.
-18. `lastRiderLocation`(number[array]): This parameter is used to pass the last known location (long,lat) coordinates of the rider. 
+18. `lastRiderLocation`(number[array]): This parameter is used to pass the last known location (long,lat) coordinates of the rider.
+19. `trackingEventCallback (eventName:string,eventValue:string)` : attributes to be returned for each event in real-time on occurrence of each event.
+      - `aerialDistance` : displacement from last location to new location
+      - `roadDistance` : from last location to new location (if and only if new location is within routeChangeBuffer distance of route polyline)
+      - `latentViz` : A boolean flag indicating if crow-fly/jump happened from old location to new location. When crowFly is false, it indicates that the new location is route adherent.
+      - `routeRecompute` : A flag in string that indicates success/failure of route-recompute when tracking SDK internally calculates new route. This will happen when crowFly is true, and new location's distance from route polyline is greater than buffer distance.
+          
+    ```javascript
+     trackingEventCallback={(eventName:any,eventValue:any) =>{
+            console.log("trackingEventCallback",eventName + ":::::::" + eventValue)
+          }}
+    ```
 ###  Method calls :- 
 
 - #### For Start Tracking
@@ -271,6 +285,15 @@ MapplsGL.setAtlasClientSecret(atlasClientSecret); //your atlasClientSecret key
  if (trackingWidgetRef.current) {
     trackingWidgetRef.current.enableFitBounds(true);
  }
+~~~
+- #### For Enable/Disable Logo Click
+~~~javascript 
+ <MapplsGL.MapView style={{ flex: 1 }}
+        ref={mapRef}
+        logoClickEnabled={false}        // disable logo click
+        renderToHardwareTextureAndroid={true}
+        mapplsStyle="sublime_grey_tracking"
+        onMapError={error => console.log(error)}/>
 ~~~
 <br><br><br>
 
