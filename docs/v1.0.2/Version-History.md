@@ -3,6 +3,7 @@
 
 | Version | Last Updated | Author |  Release Note|  
 | ---- | ---- | ---- | ---- |
+| v1.0.9 | 23 October 2023 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Bug Fixes & Improvements  |
 | v1.0.8 | 28 December 2023 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Fix Multiple marker click issue in IOS   <br/>  - Bug Fixes & Improvements  |
 | v1.0.7 | 04 December 2023 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Security Improvements   <br/>  - Bug Fixes & Improvements  |
 | v1.0.6 | 05 June 2023 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Added `Cost Estimation` Api <br/>  - Bug Fixes  |
