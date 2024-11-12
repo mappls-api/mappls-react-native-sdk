@@ -102,7 +102,7 @@ versionName "1.0"
 
 #### Step 1: Import 
 ```javascript
-import MapplsNearbyWidget from "mappls-tracking-react-native";
+import MapplsTracking from "mappls-tracking-react-native";
 import  MapplsGL  from  'mappls-map-react-native';
 ```
 
@@ -141,10 +141,8 @@ MapplsGL.setAtlasClientSecret(atlasClientSecret); //your atlasClientSecret key
           fitBoundsDuration={1000}
           latentVizRadius={100}
           trackingSegmentCompleteCallback={(event:any) => {
-            console.log("response", JSON.stringify(event))
           }}
            trackingEventCallback={(eventName:any,eventValue:any) =>{
-            console.log("trackingEventCallback",eventName + ":::::::" + eventValue)
           }}
         />
 ```
@@ -241,7 +239,8 @@ MapplsGL.setAtlasClientSecret(atlasClientSecret); //your atlasClientSecret key
 16. `maxSimDis` (number): maximum distance till which simulation will be active after the last location injected into the widget.
 17. `simSpeed` (number): This value is speed in metres/sec at which the rider simulation will be started at. The ride simulation will be slowed at a defined rate below this speed after every few metres to enable a very smooth and slow animation till the time a fresh active location is injected tot the widget or max simulation distance is reached.
 18. `lastRiderLocation`(number[array]): This parameter is used to pass the last known location (long,lat) coordinates of the rider.
-19. `trackingEventCallback (eventName:string,eventValue:string)` : attributes to be returned for each event in real-time on occurrence of each event.
+19. `orderId` (string): This parameter is used to add some unique id related to tracking
+20. `trackingEventCallback (eventName:string,eventValue:string)` : attributes to be returned for each event in real-time on occurrence of each event.
       - `aerialDistance` : displacement from last location to new location
       - `roadDistance` : from last location to new location (if and only if new location is within routeChangeBuffer distance of route polyline)
       - `latentViz` : A boolean flag indicating if crow-fly/jump happened from old location to new location. When crowFly is false, it indicates that the new location is route adherent.
@@ -347,7 +346,7 @@ Need support? contact us!
 
 
 
-<div align="center">@ Copyright 2022 CE Info Systems Ltd. All Rights Reserved.</div>
+<div align="center">@ Copyright 2024 CE Info Systems Ltd. All Rights Reserved.</div>
 
 <div align="center"> <a href="https://about.mappls.com/api/terms-&-conditions">Terms & Conditions</a> | <a href="https://about.mappls.com/about/privacy-policy">Privacy Policy</a> | <a href="https://about.mappls.com/pdf/mapmyIndia-sustainability-policy-healt-labour-rules-supplir-sustainability.pdf">Supplier Sustainability Policy</a> | <a href="https://about.mappls.com/pdf/Health-Safety-Management.pdf">Health & Safety Policy</a> | <a href="https://about.mappls.com/pdf/Environment-Sustainability-Policy-CSR-Report.pdf">Environmental Policy & CSR Report</a>
 
