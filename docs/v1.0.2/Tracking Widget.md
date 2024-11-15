@@ -234,7 +234,7 @@ MapplsGL.setAtlasClientSecret(atlasClientSecret); //your atlasClientSecret key
     trackingSegmentCompleteCallback={(event:any) => {
     // for complete event details
                 console.log("remainingDistance", JSON.stringify(event))
-    // for specefic events
+    // for specific events
                 Console.log("remainingDistance", JSON.stringify(event.distance))
                 Console.log("eta", JSON.stringify(event.duration))
                Console.log("lastRiderLocation", JSON.stringify(event.lastRiderLocation))
