@@ -232,7 +232,12 @@ MapplsGL.setAtlasClientSecret(atlasClientSecret); //your atlasClientSecret key
 14. `trackingSegmentCompleteCallback(trackingData: TrackingData)` : retrieve the remaining distance, you can access the relevant data within the trackingData object that the callback provides. For example...
     ```js
     trackingSegmentCompleteCallback={(event:any) => {
+    // for complete event details
                 console.log("remainingDistance", JSON.stringify(event))
+    // for specefic events
+                Console.log("remainingDistance", JSON.stringify(event.distance))
+                Console.log("eta", JSON.stringify(event.duration))
+               Console.log("lastRiderLocation", JSON.stringify(event.lastRiderLocation))
               }}
     ```
 15. `enableSim` (boolean): enable or disable rider simulation when rider location is inconsistent.
