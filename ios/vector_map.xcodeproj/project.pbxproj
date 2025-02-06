@@ -39,10 +39,11 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = vector_map/main.m; sourceTree = "<group>"; };
 		16E9165E434F95D203A1ECBC /* libPods-vector_map-vector_mapTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vector_map-vector_mapTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C4BA7C9F40205FE53C3CBD /* Pods-vector_map-vector_mapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vector_map-vector_mapTests.debug.xcconfig"; path = "Target Support Files/Pods-vector_map-vector_mapTests/Pods-vector_map-vector_mapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		403AA6912D54D642005FB79A /* libRNScreens.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNScreens.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7801C416E9392CCC493F76B4 /* Pods-vector_map-vector_mapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vector_map-vector_mapTests.release.xcconfig"; path = "Target Support Files/Pods-vector_map-vector_mapTests/Pods-vector_map-vector_mapTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = vector_map/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E2F557F1EA0EBE047647427 /* libPods-vector_map.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vector_map.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C265DD47C92B89DFDF533F63 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = vector_map/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		C265DD47C92B89DFDF533F63 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = vector_map/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		E0673F303AD7E8F33B6D640E /* Pods-vector_map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vector_map.debug.xcconfig"; path = "Target Support Files/Pods-vector_map/Pods-vector_map.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		EF9AB5B971701D75F0FA06AB /* Pods-vector_map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vector_map.release.xcconfig"; path = "Target Support Files/Pods-vector_map/Pods-vector_map.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +103,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				403AA6912D54D642005FB79A /* libRNScreens.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				8E2F557F1EA0EBE047647427 /* libPods-vector_map.a */,
 				16E9165E434F95D203A1ECBC /* libPods-vector_map-vector_mapTests.a */,
