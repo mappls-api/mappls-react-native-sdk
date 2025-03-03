@@ -16,7 +16,7 @@ Powered with India's most comprehensive and robust mapping functionalities.
 
 | Version | Supported SDK Version |  
 | ---- | ---- |    
-| [v1.0.4](../v1.0.4/README.md) | - Map SDK v1.0.11 <br/> - Place Search Widget v1.3.0 <br/> - GeoFence Widget v1.0.0 <br/> - Direction Widget v1.1.0 <br/> - Nearby UI Widget v1.0.0 <br/> - Mappls Polyline v1.0.0 |  
+| [v1.0.4](../v1.0.4/README.md) | - Map SDK v1.0.12 <br/> - Place Search Widget v1.3.0 <br/> - GeoFence Widget v1.0.0 <br/> - Direction Widget v1.1.0 <br/> - Nearby UI Widget v1.0.0 <br/> - Mappls Polyline v1.0.0 |  
 | [v1.0.3](../v1.0.3/README.md) | - Map SDK v1.0.10 <br/> - Place Search Widget v1.3.0 <br/> - GeoFence Widget v1.0.0 <br/> - Direction Widget v1.1.0 <br/> - Nearby UI Widget v1.0.0 <br/> - Mappls Polyline v1.0.0 |  
 | [v1.0.2](../v1.0.2/README.md) | - Map SDK v1.0.9 <br/> - Place Search Widget v1.2.0 <br/> - GeoFence Widget v1.0.0 <br/> - Direction Widget v1.1.0 <br/> - Nearby UI Widget v1.0.0 <br/> - Mappls Polyline v1.0.0 |  
 
@@ -26,11 +26,11 @@ For more details of previous documentation versions , [click here](./Doc-History
 
 | Version | Last Updated | Author |  Release Note|  
 | ---- | ---- | ---- | ---- |
+| v1.0.12 | 03 March 2025 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) | - Bug Fixes and Security Enhancement  |
 | v1.0.11 | 03 February 2025 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Added `DigipinUtility` for getting DIGIPIN from Coordinates and vice versa </br> - Added Internal Retry </br> - Bug Fixes and Security Enhancement  |
 | v1.0.10 | 19 December 2024 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Added option to set Base url in Search and Routing Apis </br> - Added Fuel Cost Api </br> - Added Route Report Summary Api </br> - Added Category Master API  |
 | v1.0.9 | 23 October 2024 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Bug Fixes & Improvements  |
 | v1.0.8 | 28 December 2023 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Fix Multiple marker click issue in IOS   <br/>  - Bug Fixes & Improvements  |
-| v1.0.7 | 04 December 2023 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Security Improvements   <br/>  - Bug Fixes & Improvements  |
 
 For more details of previous versions , [click here](../v1.0.4/Version-History.md).
 

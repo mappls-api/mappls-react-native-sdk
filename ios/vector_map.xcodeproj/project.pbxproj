@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* vector_mapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* vector_mapTests.m */; };
-		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		3275A680D158C8E91D32F076 /* libPods-vector_map.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2F557F1EA0EBE047647427 /* libPods-vector_map.a */; };
+		408D48D92D7588B3001D5306 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 408D48D82D7588B3001D5306 /* AppDelegate.mm */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		C34C822CCD3609E5D6D08E52 /* libPods-vector_map-vector_mapTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E9165E434F95D203A1ECBC /* libPods-vector_map-vector_mapTests.a */; };
 		EC8F083153818D74CE6D6586 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = C265DD47C92B89DFDF533F63 /* PrivacyInfo.xcprivacy */; };
@@ -33,13 +33,14 @@
 		00E356F21AD99517003FC87E /* vector_mapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vector_mapTests.m; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* vector_map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vector_map.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = vector_map/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = vector_map/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = vector_map/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = vector_map/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = vector_map/main.m; sourceTree = "<group>"; };
 		16E9165E434F95D203A1ECBC /* libPods-vector_map-vector_mapTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vector_map-vector_mapTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C4BA7C9F40205FE53C3CBD /* Pods-vector_map-vector_mapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vector_map-vector_mapTests.debug.xcconfig"; path = "Target Support Files/Pods-vector_map-vector_mapTests/Pods-vector_map-vector_mapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		403AA6912D54D642005FB79A /* libRNScreens.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNScreens.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		408D48D62D7583DA001D5306 /* libRNScreens.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNScreens.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		408D48D82D7588B3001D5306 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		7801C416E9392CCC493F76B4 /* Pods-vector_map-vector_mapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vector_map-vector_mapTests.release.xcconfig"; path = "Target Support Files/Pods-vector_map-vector_mapTests/Pods-vector_map-vector_mapTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = vector_map/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E2F557F1EA0EBE047647427 /* libPods-vector_map.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vector_map.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,7 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
-				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				408D48D82D7588B3001D5306 /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
@@ -103,6 +104,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				408D48D62D7583DA001D5306 /* libRNScreens.a */,
 				403AA6912D54D642005FB79A /* libRNScreens.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				8E2F557F1EA0EBE047647427 /* libPods-vector_map.a */,
@@ -398,7 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				408D48D92D7588B3001D5306 /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +491,7 @@
 				PRODUCT_NAME = vector_map;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				SYSTEM_HEADER_SEARCH_PATHS = "";
 				VALIDATE_WORKSPACE = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -591,10 +594,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -655,10 +655,7 @@
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;

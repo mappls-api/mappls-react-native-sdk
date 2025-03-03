@@ -3,6 +3,7 @@
 
 | Version | Last Updated | Author |  Release Note|  
 | ---- | ---- | ---- | ---- |
+| v1.0.12 | 03 March 2025 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) | - Bug Fixes and Security Enhancement  |
 | v1.0.11 | 03 February 2025 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Added `DigipinUtility` for getting DIGIPIN from Coordinates and vice versa </br> - Added Internal Retry </br> - Bug Fixes and Security Enhancement  |
 | v1.0.10 | 19 December 2024 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Added option to set Base url in Search and Routing Apis </br> - Added Fuel Cost Api </br> - Added Route Report Summary Api </br> - Added Category Master API  |
 | v1.0.9 | 23 October 2024 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Bug Fixes & Improvements  |
