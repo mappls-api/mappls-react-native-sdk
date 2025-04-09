@@ -1,87 +1,16 @@
 [<img src="https://about.mappls.com/images/mappls-b-logo.svg" height="60"/> </p>](https://www.mapmyindia.com/api)
 
-# Mappls React Native SDK
+# Mappls React Native SDK for TML
 
-**Easy To Integrate Maps & Location APIs & SDKs For Android & IOS Applications**
+>> Steps to integrate Mappls React Native SDK
+1. Add manualPackage in your react nativ project
+2. Add below line in package.json:
+`"mappls-map-react-native": "file:manualPackage/mappls-map-react-native"`
+3. Run `yarn install` or `npm install`
 
-Powered with India's most comprehensive and robust mapping functionalities.
 
-1. You can get your api key to be used in this document here: [https://about.mappls.com/api/signup](https://about.mappls.com/api/signup)
 
-2. The sample code is provided to help you understand the basic functionality of Mappls maps & REST APIs working on **React Native** native development platform.
 
-4. Explore through [200+ countries & territories](https://github.com/mappls-api/mappls-rest-apis/blob/main/docs/countryISO.md) with **Global Search, Routing and Mapping APIs & SDKs** by Mappls.
-
-## [Documentation History](#Documentation-History)
-
-| Version | Supported SDK Version |  
-| ---- | ---- |    
-| [v1.0.4](../v1.0.4/README.md) | - Map SDK v1.0.12 <br/> - Place Search Widget v1.3.1 <br/> - GeoFence Widget v1.0.0 <br/> - Direction Widget v1.1.0 <br/> - Nearby UI Widget v1.0.0 <br/> - Mappls Polyline v1.0.0 |  
-| [v1.0.3](../v1.0.3/README.md) | - Map SDK v1.0.10 <br/> - Place Search Widget v1.3.0 <br/> - GeoFence Widget v1.0.0 <br/> - Direction Widget v1.1.0 <br/> - Nearby UI Widget v1.0.0 <br/> - Mappls Polyline v1.0.0 |  
-| [v1.0.2](../v1.0.2/README.md) | - Map SDK v1.0.9 <br/> - Place Search Widget v1.2.0 <br/> - GeoFence Widget v1.0.0 <br/> - Direction Widget v1.1.0 <br/> - Nearby UI Widget v1.0.0 <br/> - Mappls Polyline v1.0.0 |  
-
-For more details of previous documentation versions , [click here](docs/v1.0.4/Doc-History.md)
-  
-
-## [Version History](#Version-History)
-
-| Version | Last Updated | Author |  Release Note|  
-| ---- | ---- | ---- | ---- |
-| v1.0.12 | 03 March 2025 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) | - Bug Fixes and Security Enhancement  |
-| v1.0.11 | 03 February 2025 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Added `DigipinUtility` for getting DIGIPIN from Coordinates and vice versa </br> - Added Internal Retry </br> - Bug Fixes and Security Enhancement  |
-| v1.0.10 | 19 December 2024 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Added option to set Base url in Search and Routing Apis </br> - Added Fuel Cost Api </br> - Added Route Report Summary Api </br> - Added Category Master API  |
-| v1.0.9 | 23 October 2024 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Bug Fixes & Improvements  |
-| v1.0.8 | 28 December 2023 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Fix Multiple marker click issue in IOS   <br/>  - Bug Fixes & Improvements  |
-
-For more details of previous versions , [click here](docs/v1.0.4/Version-History.md).
-
-## [Table Of Content](#Table-Of-Content)
-- [Vector Map](docs/v1.0.4/Getting-Started.md)
-    * [Getting Started](docs/v1.0.4/Getting-Started.md#getting-started)
-    * [Installation](docs/v1.0.4/Getting-Started.md#installation)
-    * [Add Import](docs/v1.0.4/Getting-Started.md#added-import)
-    * [Add your API keys to the SDK](docs/v1.0.4/Getting-Started.md#add-your-api-keys-to-the-sdk)
-    * [Add a Mappls Map to your application](docs/v1.0.4/Getting-Started.md#add-a-mappls-map-to-your-application)
-- Component
-    * [MapView](docs/v1.0.4/Map-View.md)
-    * [Light](docs/v1.0.4/Light.md)
-    * [Point Annotation](docs/v1.0.4/Point-Annotation.md)
-    * [Callout](docs/v1.0.4/Callout.md)
-    * [Camera](docs/v1.0.4/Camera.md)
-    * [User Location](docs/v1.0.4/User-Location.md)
-    * [Images](docs/v1.0.4/Images.md)
-- [Mappls DIGIPIN](docs/v1.0.4/DIGIPIN.md)
-- [Mappls Traffic Overlay](docs/v1.0.4/Traffic-Vector-Overlay.md)
-- [Set Country Regions](docs/v1.0.4/Set-Regions.md)
-- [Set Mappls Map Style](docs/v1.0.4/Set-Style.md)
-    * [List of Available Styles](docs/v1.0.4/Set-Style.md#list-of-available-styles)
-    * [Set Mappls Style](docs/v1.0.4/Set-Style.md#set-mappls-style)
-    * [To enable/disable last selected style](docs/v1.0.4/Set-Style.md#to-enabledisable-last-selected-style)
-- Rest API Kit
-    * [Search API's](docs/v1.0.4/Search-Api.md)
-        * [Auto Suggest](docs/v1.0.4/Search-Api.md#auto-suggest)
-        * [Geocode](docs/v1.0.4/Search-Api.md#geocode)
-        * [Reverse Geocode](docs/v1.0.4/Search-Api.md#reverse-geocode)
-        * [Nearby Places](docs/v1.0.4/Search-Api.md#nearby-places)
-        * [Place Detail](docs/v1.0.4/Search-Api.md#place-details)
-        * [POI Along the Route](docs/v1.0.4/Search-Api.md#poi-along-the-route)
-    * [Routes & Navigation API](docs/v1.0.4/Routing-Api.md)
-        * [Routing API](docs/v1.0.4/Routing-Api.md#routing-api)
-        * [Driving Distance Matrix API](docs/v1.0.4/Routing-Api.md#driving-distance-matrix-api)
-    * [Weather Api](docs/v1.0.4/Weather-API.md)
-    * [Nearby Reports](docs/v1.0.4/Nearby-Report.md)
-- [Mappls Search Widget](docs/v1.0.4/Place-Autocomplete.md)
-    * [Getting Started](docs/v1.0.4/Place-Autocomplete.md#getting-started)
-    * [Place Picker](docs/v1.0.4/Place-Autocomplete.md#placepicker)
-    * [Search Widget](docs/v1.0.4/Place-Autocomplete.md#search-widget)
-- [Mappls Geofence Widget](docs/v1.0.4/Geofence-Widget.md)
-- [Mappls Direction Widget](docs/v1.0.4/Direction-Widget.md)
-- [Mappls Nearby Widget](docs/v1.0.4/Nearby-Widget.md)
-- [SDK Error Codes](docs/v1.0.4/SDK-Error-code.md)
-- [Version History](docs/v1.0.4/Version-History.md)
-- [Country List](https://github.com/mappls-api/mappls-rest-apis/blob/main/docs/countryISO.md)
-
-<br><br><br>
 
 For any queries and support, please contact: 
 

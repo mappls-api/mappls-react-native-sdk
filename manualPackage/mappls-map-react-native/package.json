@@ -1,0 +1,110 @@
+{
+  "name": "mappls-map-react-native",
+  "description": "A Mappls GL react native module for creating custom maps",
+  "version": "1.0.12",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "React Native Mappls Team",
+  "main": "./javascript/index.js",
+  "keywords": [
+    "gl",
+    "mapmyindia-maps",
+    "mapmyindia",
+    "react-native-mapmyindia-maps",
+    "ios",
+    "android",
+    "react-component",
+    "react-native",
+    "mappls-maps",
+    "mappls",
+    "react-native-mappls-maps"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mappls-api/mappls-react-native-sdk"
+  },
+  "scripts": {
+    "fetch:style:spec": ". ./scripts/download-style-spec.sh",
+    "generate": "node ./scripts/autogenerate",
+    "test": "npm run lint && npm run unittest",
+    "unittest": "jest",
+    "unittest:single": "jest --testNamePattern",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "peerDependencies": {
+    "prop-types": ">=15.5.8",
+    "react": ">=16.6.1",
+    "react-native": ">=0.59.9"
+  },
+  "dependencies": {
+    "@expo/config-plugins": "^4.0.3",
+    "@mapbox/geo-viewport": ">= 0.4.0",
+    "deprecated-react-native-prop-types": "^2.3.0",
+    "@turf/along": "6.5.0",
+    "@turf/distance": "6.5.0",
+    "@turf/helpers": "6.5.0",
+    "@turf/length": "6.5.0",
+    "@turf/nearest-point-on-line": "6.5.0",
+    "@types/geojson": "^7946.0.7",
+    "debounce": "^1.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.5.0",
+    "@babel/plugin-proposal-class-properties": "7.16.0",
+    "@babel/plugin-transform-runtime": "7.16.0",
+    "@babel/runtime": "7.11.2",
+    "@react-native-community/eslint-config": "^3.0.1",
+    "@sinonjs/fake-timers": "^8.0.1",
+    "@testing-library/react-native": "^7.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^4.14.0",
+    "babel-core": "6.26.3",
+    "babel-eslint": "^10.0.1",
+    "documentation": "13.2.5",
+    "ejs": "^3.1.3",
+    "ejs-lint": "^1.1.0",
+    "eslint": "^7.32.0 ",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-import": "2.25.2",
+    "expo-module-scripts": "^2.0.0",
+    "husky": "4.3.8",
+    "jest": "25.5.4",
+    "jest-cli": "25.5.4",
+    "lint-staged": "^11.0.0",
+    "metro-react-native-babel-preset": "0.49.1",
+    "node-dir": "0.1.17",
+    "prettier": "^2.0.4",
+    "react": "16.8.3",
+    "react-docgen": "^5.0.0-beta.1",
+    "react-native": "0.59.10",
+    "react-test-renderer": "16.8.3",
+    "typescript": "^4.4.3"
+  },
+  "jest": {
+    "preset": "react-native",
+    "collectCoverageFrom": [
+      "javascript/**/*.js"
+    ],
+    "setupFiles": [
+      "./setup-jest.js",
+      "./__tests__/__mocks__/react-native.mock.js"
+    ],
+    "modulePathIgnorePatterns": [
+      "example",
+      "__tests__/__mocks__",
+      "fixtures"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm run generate"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "yarn lint"
+  }
+}
