@@ -20,32 +20,32 @@
     "@turf/turf": "^5.1.6",
     "mappls-direction-widget-react-native": "1.1.0",
     "mappls-geofence-widget-react-native": "1.0.0",
-    "mappls-map-react-native": "1.0.12",
+    "mappls-map-react-native": "1.1.0",
     "mappls-nearby-widget-react-native": "1.0.0",
     "mappls-polyline": "1.0.0",
     "mappls-search-widgets-react-native": "1.3.1",
     "radio-buttons-react-native": "^1.0.4",
     "react": "18.3.1",
-    "react-native": "0.75.4",
+    "react-native": "0.75.5",
     "react-native-android-location-enabler": "^1.2.1",
     "react-native-color-picker": "^0.6.0",
-    "react-native-elements": "^3.4.3",
-    "react-native-gesture-handler": "^1.6.1",
-    "react-native-reanimated": "^1.7.0",
-    "react-native-safe-area-context": "^0.7.3",
-    "react-native-screens": "^2.4.0",
+    "react-native-elements": "3.4.3",
+    "react-native-gesture-handler": "1.10.1",
+    "react-native-reanimated": "3.15.4",
+    "react-native-safe-area-context": "3.0.0",
+    "react-native-screens": "3.35.0",
     "react-native-simple-toast": "^1.0.0",
-    "react-native-vector-icons": "^6.6.0",
-    "reanimated-bottom-sheet": "^1.0.0-alpha.22"
+    "react-native-svg": "^13.9.0",
+    "react-native-vector-icons": "10.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@babel/preset-env": "^7.20.0",
     "@babel/runtime": "^7.20.0",
-    "@react-native/babel-preset": "0.75.4",
-    "@react-native/eslint-config": "0.75.4",
-    "@react-native/metro-config": "0.75.4",
-    "@react-native/typescript-config": "0.75.4",
+    "@react-native/babel-preset": "0.75.5",
+    "@react-native/eslint-config": "0.75.5",
+    "@react-native/metro-config": "0.75.5",
+    "@react-native/typescript-config": "0.75.5",
     "@types/react": "^18.2.6",
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.6.3",
@@ -57,6 +57,5 @@
   },
   "engines": {
     "node": ">=18"
-  },
-  "packageManager": "yarn@3.6.4"
+  }
 }

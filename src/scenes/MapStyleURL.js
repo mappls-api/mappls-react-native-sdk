@@ -10,7 +10,6 @@ import {
 } from 'react-native';
 import MapplsGL from 'mappls-map-react-native';
 import {DEFAULT_CENTER_COORDINATE} from '../utils/index';
-//import BottomSheet from 'reanimated-bottom-sheet';
 import BottomSheet, {BottomSheetFlatList} from '@gorhom/bottom-sheet';
 import RNSwitch from '../components/RNSwitch';
 
