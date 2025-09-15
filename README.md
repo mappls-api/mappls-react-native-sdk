@@ -2,7 +2,9 @@
 
 > The [main](https://github.com/mappls-api/mappls-react-native-sdk/tree/main) branch contains the documentation for releases using the updated Authorization & Authentication mechanism introduced in August 2025.  
 > If you wish to use the releases that use the legacy authentication method based on OAuth 2.0, please refer to the [auth-legacy](https://github.com/mappls-api/mappls-react-native-sdk/tree/auth-legacy) branch.<br><br>
-> **Pub.dev Versions**: To be added later 
+> **NPM Versions**: 
+>   - If you wish to the SDK for `auth-legacy` branch, please use the latest sdk on npm with the tag `auth-legacy`.<br>
+>   - Any SDKs on npm without this tag will be using the newer auth mechanism from version `2.0.0` onwards. 
 
 
 <br>[<img src="https://about.mappls.com/images/mappls-b-logo.svg" height="60"/> </p>](https://www.mapmyindia.com/api)
