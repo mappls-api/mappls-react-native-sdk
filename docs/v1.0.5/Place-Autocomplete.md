@@ -2,17 +2,7 @@
 
 # Mappls Search Widget
 ## [Getting started](#getting-started)
-`npm install mappls-search-widgets-react-native --save`
-
-* Install peerDependencies 
-~~~javascript
-npm i mappls-map-react-native react-native-simple-toast @react-native-community/netinfo
-~~~
-
-
-* If using React-native<0.60
-
-` react-native link mappls-search-widgets-react-native`
+`npm install mappls-search-widgets-react-native  --tag=auth-legacy`
 
 
 ## Installation
