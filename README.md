@@ -25,7 +25,7 @@ Powered with India's most comprehensive and robust mapping functionalities.
 
 | Version | Supported SDK Version |  
 | ---- | ---- |    
-| [v2.0.0](docs/v2.0.0/README.md) | - Map SDK v2.0.1 <br/> - Mappls Polyline v1.0.0 |
+| [v2.0.0](docs/v2.0.0/README.md) | - Map SDK v2.0.2 <br/> - Place Search Widget v2.0.0 <br/> - Mappls Polyline v1.0.0 |
 
 For more details of previous documentation versions , [click here](docs/v2.0.0/Doc-History.md)
 
@@ -65,6 +65,10 @@ For more details of previous documentation versions , [click here](docs/v2.0.0/D
         * [Driving Distance Matrix API](docs/v2.0.0/Routing-Api.md#driving-distance-matrix-api)
     * [Weather Api](docs/v2.0.0/Weather-Api.md)
     * [Nearby Reports](docs/v2.0.0/Nearby-Report.md)
+- [Mappls Search Widget](docs/v2.0.0/Place-Autocomplete.md)
+    * [Getting Started](docs/v2.0.0/Place-Autocomplete.md#getting-started)
+    * [Place Picker](docs/v2.0.0/Place-Autocomplete.md#placepicker)
+    * [Search Widget](docs/v2.0.0/Place-Autocomplete.md#search-widget)
 - [SDK Error Codes](docs/v2.0.0/SDK-Error-code.md)
 - [Version History](docs/v2.0.0/Version-History.md)
 - [Country List](https://github.com/mappls-api/mappls-rest-apis/blob/main/docs/countryISO.md)

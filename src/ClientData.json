@@ -1,0 +1,139 @@
+{
+    "response": {
+    "total_results": 3,
+    "nearby_places": [
+      {
+        "_id": {
+          "$oid": "64cc9ba35212836476ebbd21"
+        },
+        "name": "AIPL The Peaceful Homes",
+        "location": {
+          "type": "Point",
+          "name": "Sector 70A, Gurugram, Haryana 122101",
+          "coordinates": [
+            {
+              "latitude": 28.38361801036934,
+              "longitude": 77.01775095884524
+            }
+          ]
+        },
+        "tower_list": [
+          "Tower A",
+          "Tower B",
+          "Tower C",
+          "Tower D",
+          "Tower E",
+          "Tower Z1"
+        ],
+        "description": "Sector 70A, Gurugram, Haryana 122101",
+        "society_id_sql": "243cf214-ffb4-400d-aa35-e89042e091b4",
+        "distance": 7.33328391421201,
+        "point_in_society": false,
+        "zoom_level": 0.004,
+        "polygon": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64ca0481447817c245ffe0ee"
+        },
+        "name": "M3M Escala",
+        "location": {
+          "type": "Point",
+          "name": "Sector 70A, Gurugram, Haryana 122001",
+          "coordinates": [
+            {
+              "latitude": 28.38215030415146,
+              "longitude": 77.0201712517681
+            }
+          ]
+        },
+        "tower_list": [
+          "Tower 1",
+          "Tower 2"
+        ],
+        "description": "Sector 70A, Gurugram, Haryana 122001",
+        "society_id_sql": "86b50a02-a484-4bf7-a9b3-2c5e771f40ab",
+        "distance": 136.79917355062526,
+        "point_in_society": false,
+        "zoom_level": 0.004,
+        "polygon": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "_id": {
+          "$oid": "64ca0481447817c245ffe0df"
+        },
+        "name": "Paras Irene",
+        "location": {
+          "type": "Point",
+          "name": "Sector 70A, Gurugram, Haryana 122101",
+          "coordinates": [
+            {
+              "latitude": 28.38525077166468,
+              "longitude": 77.01710691751319
+            }
+          ]
+        },
+        "tower_list": [
+          "Tower N1",
+          "Tower N2",
+          "Tower N3",
+          "Tower N4",
+          "Tower N5",
+          "Tower N6",
+          "Tower N7"
+        ],
+        "description": "Sector 70A, Gurugram, Haryana 122101",
+        "society_id_sql": "42b09e62-8e38-4950-8d6f-a56605269912",
+        "distance": 222.21250915013053,
+        "point_in_society": false,
+        "zoom_level": 0.004,
+        "polygon": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+buildscript {
+    ext {
+        buildToolsVersion = "36.0.0"
+        minSdkVersion = 24
+        compileSdkVersion = 36
+        targetSdkVersion = 36
+        ndkVersion = "27.1.12297006"
+        kotlinVersion = "2.1.20"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+    }
+}
+project.ext.react = [
+        enableHermes: false,  // or true if using Hermes
+        nodeExecutableAndArgs: ["/usr/local/bin/node"], // Full path to nod
+]
+allprojects {
+    repositories {
+        google() // Ensure this is included
+        mavenCentral()
+        maven {
+            url 'https://maven.mappls.com/repository/mappls/'
+        }
+        
+        maven { url "https://jitpack.io" }
+    }
+}
+apply plugin: "com.facebook.react.rootproject"

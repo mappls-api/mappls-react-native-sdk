@@ -1,11 +1,12 @@
 [<img src="https://about.mappls.com/images/mappls-b-logo.svg" height="60"/> </p>](https://www.mapmyindia.com/api)
-# Mappls Map SDK
+# Add Mappls Map SDK
 Mappls Map SDK is a powerful and versatile software development kit that enables developers to seamlessly integrate rich, interactive mapping and location-based services into their mobile and web applications. With comprehensive support for detailed maps, routing, geocoding, real-time traffic updates, and advanced spatial analytics, the SDK empowers businesses to create intuitive navigation experiences and location-aware solutions. Its customizable UI components, efficient performance, and extensive API set make it ideal for building applications across various industries including logistics, transportation, travel, and urban planning.
 
 ## [Version History]()
 
 | Version | Last Updated      | Author | Release Note                                                                                                                                                                                         | 
 |---------|-------------------| ---- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| v2.0.2  | 29 Sep, 2025     | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) | - Bug Fixes and Improvement                                                                                     |
 | v2.0.1  | 17 Sep, 2025     | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) | - Bug Fixes and Improvement                                                                                     |
 | v2.0.0  | 19 Aug, 2025     | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) | - Authentication and authorization mechanisms have been revised. </br> - Updated minimum Android version to 21. </br> - Added Support for 16 KB Page Sizes </br> - Added SPM(Swift Package Manager Support) for IOS. </br> - React Native New Architecture Support                                                                                     |
 

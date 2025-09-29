@@ -25,7 +25,7 @@ Powered with India's most comprehensive and robust mapping functionalities.
 
 | Version | Supported SDK Version |  
 | ---- | ---- |    
-| [v2.0.0](../v2.0.0/README.md) | - Map SDK v2.0.1  <br/> - Mappls Polyline v1.0.0 |
+| [v2.0.0](../v2.0.0/README.md) | - Map SDK v2.0.2 <br/> - Place Search Widget v2.0.0 <br/> - Mappls Polyline v1.0.0 |
 
 For more details of previous documentation versions , [click here](./Doc-History.md)
 
@@ -34,8 +34,8 @@ For more details of previous documentation versions , [click here](./Doc-History
     * [Getting Started](./Getting-Started.md#getting-started)
     * [Installation](./Getting-Started.md#installation)
     * [Add Import](./Getting-Started.md#added-import)
-    * [Add your API keys to the SDK](./Getting-Started.md#add-your-api-keys-to-the-sdk)
-    * [Add a Mappls Map to your application](./Getting-Started.md#add-a-mappls-map-to-your-application)
+    * [Add Mappls SDK](./Add-Mappls-SDK.md)
+    * [Add Mappls Map SDK](./Add-Mappls-Map.md)
 - Component
     * [MapView](./Map-View.md)
     * [Light](./Light.md)
@@ -64,6 +64,10 @@ For more details of previous documentation versions , [click here](./Doc-History
         * [Driving Distance Matrix API](./Routing-Api.md#driving-distance-matrix-api)
     * [Weather Api](./Weather-API.md)
     * [Nearby Reports](./Nearby-Report.md)
+- [Mappls Search Widget](./Place-Autocomplete.md)
+    * [Getting Started](./Place-Autocomplete.md#getting-started)
+    * [Place Picker](./Place-Autocomplete.md#placepicker)
+    * [Search Widget](./Place-Autocomplete.md#search-widget)
 - [SDK Error Codes](./SDK-Error-code.md)
 - [Version History](./Version-History.md)
 - [Country List](https://github.com/mappls-api/mappls-rest-apis/blob/main/docs/countryISO.md)
