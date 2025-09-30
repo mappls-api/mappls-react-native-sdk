@@ -5,7 +5,7 @@
 Routing and displaying driving directions on map, including instructions for navigation, distance to destination, traffic etc. are few of the most important parts of developing a map based application. This REST API calculates driving routes between specified locations including via points based on route type(fastest or shortest), includes delays for traffic congestion , and is capable of handling additional route parameters like: type of roads to avoid, travelling vehicle type etc.
 
 ~~~javascript
-MapplsGL.RestApi.direction({
+RestApi.direction({
     origin: this.state.sourceCoordinates,
     destination: this.state.destinationCoordinates,
     profile: setProfile,
@@ -27,27 +27,27 @@ MapplsGL.RestApi.direction({
 #### Optional Parameter
 1. `waypoints(Array<string>)`: pass list of waypoints
 2. `excludes(Array<string>)`: Additive list of road classes to avoid, order does not matter. **Below are the available value:**
-    - MapplsGL.RestApi.DirectionsCriteria.EXCLUDE_FERRY
-    - MapplsGL.RestApi.DirectionsCriteria.EXCLUDE_MOTORWAY
-    - MapplsGL.RestApi.DirectionsCriteria.EXCLUDE_TOLL
+    - RestApi.DirectionsCriteria.EXCLUDE_FERRY
+    - RestApi.DirectionsCriteria.EXCLUDE_MOTORWAY
+    - RestApi.DirectionsCriteria.EXCLUDE_TOLL
 3. `overview(string)`: Add overview geometry either full, simplified according to highest zoom level it could be display on, or not at all. Below are the available value:
-    - MapplsGL.RestApi.DirectionsCriteria.OVERVIEW_FULL
-    - MapplsGL.RestApi.DirectionsCriteria.OVERVIEW_FALSE
-    - MapplsGL.RestApi.DirectionsCriteria.OVERVIEW_SIMPLIFIED
+    - RestApi.DirectionsCriteria.OVERVIEW_FULL
+    - RestApi.DirectionsCriteria.OVERVIEW_FALSE
+    - RestApi.DirectionsCriteria.OVERVIEW_SIMPLIFIED
 4. `steps(boolean)`: Return route steps for each route leg. Possible values are true/false. By default it will be used as false.
 5. `alternatives(boolean)`: Search for alternative routes.
 6. `geometries(string)`: This parameter used to change the route geometry format/density (influences overview and per step). **Below are the available value:**
-    - MapplsGL.RestApi.DirectionsCriteria.GEOMETRY_POLYLINE: with 5 digit precision
-    - MapplsGL.RestApi.DirectionsCriteria.GEOMETRY_POLYLINE6 (Default): with 6 digit precision
+    - RestApi.DirectionsCriteria.GEOMETRY_POLYLINE: with 5 digit precision
+    - RestApi.DirectionsCriteria.GEOMETRY_POLYLINE6 (Default): with 6 digit precision
 7. `profile(string)`: **Below are the available profile:**
-    - MapplsGL.RestApi.DirectionsCriteria.PROFILE_DRIVING (Default):Meant for car routing
-    - MapplsGL.RestApi.DirectionsCriteria.PROFILE_WALKING: Meant for pedestrian routing. Routing with this profile is restricted to route_adv only. region & rtype request parameters are not supported in pedestrian routing
-    - MapplsGL.RestApi.DirectionsCriteria.PROFILE_BIKING:Meant for two-wheeler routing. Routing with this profile is restricted to route_adv only. region & rtype request parameters are not supported in two-wheeler routing.
-    - MapplsGL.RestApi.DirectionsCriteria.PROFILE_TRUCKING:Meant for Truck routing. Routing with this profile is restricted to route_adv only. region & rtype request parameters are not supported in truck routing.
+    - RestApi.DirectionsCriteria.PROFILE_DRIVING (Default):Meant for car routing
+    - RestApi.DirectionsCriteria.PROFILE_WALKING: Meant for pedestrian routing. Routing with this profile is restricted to route_adv only. region & rtype request parameters are not supported in pedestrian routing
+    - RestApi.DirectionsCriteria.PROFILE_BIKING:Meant for two-wheeler routing. Routing with this profile is restricted to route_adv only. region & rtype request parameters are not supported in two-wheeler routing.
+    - RestApi.DirectionsCriteria.PROFILE_TRUCKING:Meant for Truck routing. Routing with this profile is restricted to route_adv only. region & rtype request parameters are not supported in truck routing.
 8. `resource(string)`: **Below are the available resource:**
-    - MapplsGL.RestApi.DirectionsCriteria.RESOURCE_ROUTE (Default): to calculate a route & its duration without considering traffic conditions.
-    - MapplsGL.RestApi.DirectionsCriteria.RESOURCE_ROUTE_ETA get the updated duration of a route considering live traffic; Applicable for India only "region=ind" and "rtype=1" is not supported. This is different from route_traffic; since this doesn't search for a route considering traffic, it only applies delays to the default route.
-    - MapplsGL.RestApi.DirectionsCriteria.RESOURCE_ROUTE_TRAFFIC: to search for routes considering live traffic; Applicable for India only “region=ind” and “rtype=1” is not supported
+    - RestApi.DirectionsCriteria.RESOURCE_ROUTE (Default): to calculate a route & its duration without considering traffic conditions.
+    - RestApi.DirectionsCriteria.RESOURCE_ROUTE_ETA get the updated duration of a route considering live traffic; Applicable for India only "region=ind" and "rtype=1" is not supported. This is different from route_traffic; since this doesn't search for a route considering traffic, it only applies delays to the default route.
+    - RestApi.DirectionsCriteria.RESOURCE_ROUTE_TRAFFIC: to search for routes considering live traffic; Applicable for India only “region=ind” and “rtype=1” is not supported
 
 ### Reponse Parameter
 1. `code(string)`: if request is successful, response is .ok.. Else, see the service dependent and general status codes. In case of error, .NoRoute. code is supported (in addition to the general ones) which means no route found.
@@ -103,7 +103,7 @@ Adding driving directions API would help to add predicted travel time & duration
 Get driving time and distance between a center point and up to 10 destination points using Mappls Maps Distance API.
 
 ~~~javascript
-MapplsGL.RestApi.distance({
+RestApi.distance({
     coordinates: [sourceData, destinationData],
 }).then(response => {
     // Handle Response
@@ -119,9 +119,9 @@ MapplsGL.RestApi.distance({
 #### Optional Parameter
 1. `profile(string)`: Only supports MapplsGL.RestApi.DirectionsCriteria.PROFILE_DRIVING.
 2. `resource(string)`: **Below are the available value:**
-    - MapplsGL.RestApi.DirectionsCriteria.RESOURCE_DISTANCE (Default): to calculate the route & duration without considering traffic conditions.
-    - MapplsGL.RestApi.DirectionsCriteria.RESOURCE_DISTANCE_ETA: to get the updated duration considering live traffic; Applicable for India only “region=ind” and “rtype=1” is not supported. This is different from distance_matrix_traffic; since this doesn't search for a route considering traffic, it only applies delays to the default route.
-    - MapplsGL.RestApi.DirectionsCriteria.RESOURCE_DISTANCE_TRAFFIC: to search for routes considering live traffic; Applicable for India only “region=ind” and “rtype=1” is not supported
+    - RestApi.DirectionsCriteria.RESOURCE_DISTANCE (Default): to calculate the route & duration without considering traffic conditions.
+    - RestApi.DirectionsCriteria.RESOURCE_DISTANCE_ETA: to get the updated duration considering live traffic; Applicable for India only “region=ind” and “rtype=1” is not supported. This is different from distance_matrix_traffic; since this doesn't search for a route considering traffic, it only applies delays to the default route.
+    - RestApi.DirectionsCriteria.RESOURCE_DISTANCE_TRAFFIC: to search for routes considering live traffic; Applicable for India only “region=ind” and “rtype=1” is not supported
 
 ### Response Parameters
 1. `responseCode(number)`: Response codes of the api.
