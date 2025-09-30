@@ -1,7 +1,7 @@
 [<img src="https://about.mappls.com/images/mappls-b-logo.svg" height="60"/> </p>](https://www.mapmyindia.com/api)
 
 # MapView
-## MapplsGL.MapView
+## MapView
 
 ### props
 | Prop | Type | Default | Required | Description |
