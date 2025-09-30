@@ -16,18 +16,18 @@ Read more for [List of Available Styles](./Set-Style.md)
 ## Implementation
 To enable/disable Tiles Overlay follow the below code snippet. Default is false.
 ```java
- <MapplsGL.MapView style={{flex: 1}}
+ <MapView style={{flex: 1}}
         enableTraffic={false}
         enableTrafficFreeFlow={false}
         enableTrafficNonFreeFlow={false}
         enableTrafficStopIcon={false}        //To enable disable all Traffic
         enableTrafficClosure={this.state.isChecked3}
        >
-          <MapplsGL.Camera
+          <Camera
             zoomLevel={8}
             centerCoordinate={DEFAULT_CENTER_COORDINATE}
           />
-        </MapplsGL.MapView> 
+        </MapView> 
 ```
 
 
