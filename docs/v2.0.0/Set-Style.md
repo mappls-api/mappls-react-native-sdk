@@ -17,14 +17,14 @@ Explore and choose from our map style list on [Live Demo](https://www.mapmyindia
 To get the list of available styles:
 
 ~~~javascript  
-<MapplsGL.MapView
+<MapView
           didLoadedMapplsMapsStyles={data => {
             
             
           }}
           style={{flex: 1}}>
           
-</MapplsGL.MapView>
+</MapView>
 ~~~
 
 
@@ -50,7 +50,7 @@ To set Mappls Maps style reference code is below:
 To enable/disable loading of last selected style:
 
 ~~~javascript
-MapplsGL.setShowLastSelectedStyle(value);
+setShowLastSelectedStyle(value);
 ~~~   
 
 
