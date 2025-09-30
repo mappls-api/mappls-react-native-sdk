@@ -15,19 +15,19 @@ For more details of previous versions , [click here](./Version-History.md).
 
 ## [Added Import]()
 ```javascript
-import MapplsGL from 'mappls-map-react-native';
+import {MapView, Camera} from 'mappls-map-react-native';
 ```
 
 ### [Add a Mappls Map to your application](#add-a-mappls-map-to-your-application)
 ~~~javascript
-<MapplsGL.MapView
+<MapView
   onMapError={error => console.log(error.code + ' ' + error.message)}
   style={{flex: 1}}>
-    <MapplsGL.Camera
+    <Camera
       zoomLevel={12}
       centerCoordinate={DEFAULT_CENTER_COORDINATE}
     />
-</MapplsGL.MapView>
+</MapView>
 ~~~
 
 
