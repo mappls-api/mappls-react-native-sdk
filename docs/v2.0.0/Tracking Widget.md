@@ -43,17 +43,8 @@ import MapplsTracking from "mappls-tracking-react-native";
 import  MapplsGL  from  'mappls-map-react-native';
 ```
 
-#### Step 2.  Initialization
-Initialize the SDK with your keys.
-~~~javascript
-// for map sdk
-MapplsGL.setMapSDKKey(mapSDKKey);//place your mapsdkKey
-MapplsGL.setRestAPIKey(restAPIKey);//your restApiKey
-MapplsGL.setAtlasClientId(atlasClientId);//your atlasClientId key
-MapplsGL.setAtlasClientSecret(atlasClientSecret); //your atlasClientSecret key
-~~~
 
-#### Step 3:  Open MapplsTrackingWidget 
+#### Step 2:  Open MapplsTrackingWidget 
 
 ```javascript
         <MapplsTracking.MapplsTrackingWidget
