@@ -1,7 +1,7 @@
 [<img src="https://about.mappls.com/images/mappls-b-logo.svg" height="60"/> </p>](https://www.mapmyindia.com/api)
 
 # Images
-## MapplsGL.Images
+## Images
 
 Images defines the images used in Symbol etc layers
 
