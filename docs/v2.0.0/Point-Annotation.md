@@ -1,6 +1,6 @@
 [<img src="https://about.mappls.com/images/mappls-b-logo.svg" height="60"/> </p>](https://www.mapmyindia.com/api)
 # PointAnnotation
-## MapplsGL.PointAnnotation
+## PointAnnotation
 
 PointAnnotation represents a one-dimensional shape located at a single geographical coordinate.
 
