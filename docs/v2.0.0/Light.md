@@ -1,7 +1,7 @@
 [<img src="https://about.mappls.com/images/mappls-b-logo.svg" height="60"/> </p>](https://www.mapmyindia.com/api)
 
 # Light
-## MapplsGL.Light
+## Light
 
 Light represents the light source for extruded geometries
 
