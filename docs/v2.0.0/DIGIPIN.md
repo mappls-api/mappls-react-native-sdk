@@ -49,13 +49,13 @@ The introduction of DIGIPIN marks a transformative leap in India's digital journ
 
 **To convert Coordinate to DIGIPIN**
 ~~~javascript
-MapplsGL.getDigipinFromCoordinate([longitude, latitude]).then((digipin) => console.log(data));
+getDigipinFromCoordinate([longitude, latitude]).then((digipin) => console.log(data));
 ~~~
 
 
 **To convert DIGIPIN to Coordinate**
 ~~~javascript
-MapplsGL.getCoordinateFromDigipin(digipin).then((coordinates) => console.log(coordinates))
+getCoordinateFromDigipin(digipin).then((coordinates) => console.log(coordinates))
 ~~~
 
 <br><br><br>
