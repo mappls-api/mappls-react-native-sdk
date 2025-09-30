@@ -6,7 +6,7 @@ The following search services are available as part of the SDK bundled by defaul
 ## [Auto Suggest](#auto-suggest)
 The Autosuggest API helps users to complete queries faster by adding intelligent search capabilities to your web or mobile app. This API returns a list of results as well as suggested queries as the user types in the search field.
 ~~~javascript
-MapplsGL.RestApi.autoSuggest({
+RestApi.autoSuggest({
     query: text,
 }).then(response => {
     //Handle Response
@@ -23,14 +23,14 @@ MapplsGL.RestApi.autoSuggest({
     - filter = bounds: lat1, lng1; lat2, lng2 (latitude, longitude) {e.g. filter: "bounds:28.598882,77.212407;28.467375,77.353513"}
     - filter = cop: {mapplspin} (string) {e.g. filter: "cop:YMCZ0J"}
 2. `pod(String)`: it takes in the place type code which helps in restricting the results to certain chosen type. **Below mentioned are the codes for the pod**
-    - MapplsGL.RestApi.AutoSuggestCriteria.POD_SUB_LOCALITY: Sublocality
-    - MapplsGL.RestApi.AutoSuggestCriteria.POD_LOCALITY: Locality
-    - MapplsGL.RestApi.AutoSuggestCriteria.POD_CITY: City
-    - MapplsGL.RestApi.AutoSuggestCriteria.POD_VILLAGE: Village
-    - MapplsGL.RestApi.AutoSuggestCriteria.POD_SUB_DISTRICT: Subdistrict
-    - MapplsGL.RestApi.AutoSuggestCriteria.POD_DISTRICT: District
-    - MapplsGL.RestApi.AutoSuggestCriteria.POD_STATE: State
-    - MapplsGL.RestApi.AutoSuggestCriteria.POD_SUB_SUB_LOCALITY: Subsublocality
+    - RestApi.AutoSuggestCriteria.POD_SUB_LOCALITY: Sublocality
+    - RestApi.AutoSuggestCriteria.POD_LOCALITY: Locality
+    - RestApi.AutoSuggestCriteria.POD_CITY: City
+    - RestApi.AutoSuggestCriteria.POD_VILLAGE: Village
+    - RestApi.AutoSuggestCriteria.POD_SUB_DISTRICT: Subdistrict
+    - RestApi.AutoSuggestCriteria.POD_DISTRICT: District
+    - RestApi.AutoSuggestCriteria.POD_STATE: State
+    - RestApi.AutoSuggestCriteria.POD_SUB_SUB_LOCALITY: Subsublocality
 3. `location(Location)`: e.g. location: {latitude: 28.454, longitude: 77.435}
 4. `tokenizeAddress(boolean)`: provides the different address attributes in a structured object.
 5. `zoom(double)`: takes the zoom level of the current scope of the map (min: 4, max: 18).
@@ -75,7 +75,7 @@ MapplsGL.RestApi.autoSuggest({
 Our Geocoding API converts real addresses into these geographic coordinates (latitude/longitude) to be placed on a map, be it for any street, area, postal code, POI or a house number etc.
 
 ~~~javascript
-MapplsGL.RestApi.geocode({address: placeName})
+RestApi.geocode({address: placeName})
     .then(response => {
         //Handle Response
     })
@@ -117,7 +117,7 @@ MapplsGL.RestApi.geocode({address: placeName})
 Reverse Geocoding is a process to give the closest matching address to a provided geographical coordinates (latitude/longitude). Mappls reverse geocoding API provides real addresses along with nearest popular landmark for any such geo-positions on the map.
 
 ~~~javascript
- MapplsGL.RestApi.reverseGeocode({latitude: lat, longitude: lng})
+ RestApi.reverseGeocode({latitude: lat, longitude: lng})
       .then(response => {
         // Handle Response
       })
@@ -158,7 +158,7 @@ Reverse Geocoding is a process to give the closest matching address to a provide
 Nearby Places API, enables you to add discovery and search of nearby POIs by searching for a generic keyword used to describe a category of places or via the unique code assigned to that category.
 
 ~~~javascript
-MapplsGL.RestApi.nearby({
+RestApi.nearby({
       keyword: keyword,
       location: location
     }) .then(response => {
@@ -235,7 +235,7 @@ MapplsGL.RestApi.nearby({
 Mappls Place Details is a simple, standardized and precise pan-India digital address system. Every location has been assigned a unique digital address or an mapplsPin. The mapplsPin API can be used to extract the details of a place with the help of its mapplsPinn i.e. a 6 digit code or a place_id.
 
 ~~~javascript
-MapplsGL.RestApi.placeDetail(
+RestApi.placeDetail(
     {mapplsPin: "MMI000"}
     ).then(response => {
         // Handle Response
@@ -260,7 +260,7 @@ MapplsGL.RestApi.placeDetail(
 With POI Along the Route API user will be able to get the details of POIs of a particular category along his set route. The main focus of this API is to provide convenience to the user and help him in locating the place of his interest on his set route.
 
 ~~~javascript
-MapplsGL.RestApi.POIAlongRoute({
+RestApi.POIAlongRoute({
       path: path,
       category: keyword,
       buffer: 300,
