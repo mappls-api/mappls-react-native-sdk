@@ -1,7 +1,7 @@
 [<img src="https://about.mappls.com/images/mappls-b-logo.svg" height="60"/> </p>](https://www.mapmyindia.com/api)
 
 # Callout
-## MapplsGL.Callout
+## Callout
 
 Callout that displays information about a selected annotation near the annotation.
 
