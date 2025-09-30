@@ -13,7 +13,7 @@ Mappls SDK enables the developer to access current weather conditions around Ind
 ### [Weather](#weather)
 ```javascript
 try{
- const weatherResponse = await MapplsGL.RestApi.weather(params);
+ const weatherResponse = await RestApi.weather(params);
  //Do something with result
  }catch(e){
    //error logs
