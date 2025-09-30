@@ -22,7 +22,7 @@ Now, what you as a developer need to do is to specify a region in our APIs/SDKs 
 To set the region, refer to the below code. Default is India ( "IND")
 
 ```javascript 
-MapplsGL.setRegion("KWT");
+setRegion("KWT");
 ```
 <br><br><br>
 
