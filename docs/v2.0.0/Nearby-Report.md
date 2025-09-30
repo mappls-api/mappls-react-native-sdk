@@ -9,7 +9,7 @@ Our SDK allows you the developers to get smooth way to access these reports.
 
 ```javascript
 try {
- const nearbyReportsResponse = await MapplsGL.RestApi.nearbyReports(params);
+ const nearbyReportsResponse = await RestApi.nearbyReports(params);
   console.log(JSON.stringify(data));
   } catch (e) {
  //error log
