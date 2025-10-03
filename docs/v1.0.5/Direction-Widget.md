@@ -4,17 +4,8 @@
 
 ## Getting started
 
-`npm install mappls-direction-widget-react-native`
+`npm install mappls-direction-widget-react-native --tag=auth-legacy`
 
-* Install peerDependencies 
-~~~javascript
-npm i mappls-map-react-native
-~~~
-
-
-* If using React-native<0.60
-
-` react-native link mappls-direction-widget-react-native`
 
 
 ### Installation

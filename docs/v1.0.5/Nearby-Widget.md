@@ -4,17 +4,7 @@
 
 ## Getting started
 
-`npm i mappls-nearby-widget-react-native`
-
-* Install peerDependencies 
-~~~javascript
-npm i mappls-map-react-native
-~~~
-
-
-* If using React-native<0.60
-
-` react-native link mappls-nearby-widget-react-native`
+`npm i mappls-nearby-widget-react-native --tag=auth-legacy`
 
 
 ### Installation

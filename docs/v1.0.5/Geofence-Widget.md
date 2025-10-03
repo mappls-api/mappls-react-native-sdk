@@ -4,17 +4,7 @@
 
 ## Getting started
 
-`npm install mappls-geofence-widget-react-native`
-
-* Install peerDependencies 
-~~~javascript
-npm i mappls-map-react-native
-~~~
-
-
-* If using React-native<0.60
-
-` react-native link mappls-geofence-widget-react-native`
+`npm install mappls-geofence-widget-react-native --tag=auth-legacy`
 
 
 ### Installation
