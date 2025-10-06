@@ -3,28 +3,30 @@ import { View, Text, StyleSheet } from 'react-native';
 import CheckBox from '@react-native-community/checkbox';
 import colors from '../constants/colors';
 
-interface CheckBoxListProps {
-  items: string[]; // List of string items
-  selected?: string[]; // Default selected items
-  onChange?: (selected: string[]) => void;
+interface CheckBoxListProps<T> {
+  items: T[];
+  selected?: T[];
+  onChange?: (selected: T[]) => void;
   title?: string;
+  getLabel?: (item: T) => string; // optional, for custom label extraction
 }
 
-const CheckBoxGroup: React.FC<CheckBoxListProps> = ({
+function CheckBoxGroup<T extends string | { toString(): string }>({
   items,
   selected = [],
   onChange,
   title,
-}) => {
-  const [selectedItems, setSelectedItems] = useState<string[]>(selected);
+  getLabel,
+}: CheckBoxListProps<T>) {
+  const [selectedItems, setSelectedItems] = useState<T[]>(selected);
 
-  const toggleItem = (item: string, isChecked: boolean) => {
+  const toggleItem = (item: T, isChecked: boolean) => {
     const updated = isChecked
       ? [...selectedItems, item]
       : selectedItems.filter(i => i !== item);
 
     setSelectedItems(updated);
-    if (onChange) onChange(updated);
+    onChange?.(updated);
   };
 
   useEffect(() => {
@@ -34,25 +36,28 @@ const CheckBoxGroup: React.FC<CheckBoxListProps> = ({
   return (
     <View style={styles.container}>
       {title && <Text style={styles.title}>{title}</Text>}
-      {items.map((item, index) => (
-        <View key={index} style={styles.checkboxContainer}>
-          <CheckBox
-            value={selectedItems.includes(item)}
-            onValueChange={(newValue) => toggleItem(item, newValue)}
-            tintColors={{ true: colors.accentPrimary, false: '#666' }}
-          />
-          <Text style={styles.label}>{item}</Text>
-        </View>
-      ))}
+      {items.map((item, index) => {
+        const label = getLabel ? getLabel(item) : item.toString();
+        return (
+          <View key={index} style={styles.checkboxContainer}>
+            <CheckBox
+              value={selectedItems.includes(item)}
+              onValueChange={val => toggleItem(item, val)}
+              tintColors={{ true: colors.accentPrimary, false: '#666' }}
+            />
+            <Text style={styles.label}>{label}</Text>
+          </View>
+        );
+      })}
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: { paddingVertical: 10 },
-  title: {   marginBottom: 10 ,color:colors.textPrimary},
+  title: { marginBottom: 10, color: colors.textPrimary },
   checkboxContainer: { flexDirection: 'row', alignItems: 'center', marginVertical: 8 },
-  label: {  marginLeft: 8,color: colors.textPrimary },
+  label: { marginLeft: 8, color: colors.textPrimary },
 });
 
 export default CheckBoxGroup;

@@ -1,6 +1,5 @@
-import React from 'react';
-import { View, Button, StyleSheet, Alert, SafeAreaView, TouchableOpacity, Text, Image } from 'react-native';
-import exampleIcon from '../../assets/marker.png';
+import React, { useState } from 'react';
+import { View,TouchableOpacity, Text, Image, ScrollView } from 'react-native';
 import MapplsUIWidgets from 'mappls-search-widgets-react-native';
 import { useNavigation } from '@react-navigation/core';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -10,7 +9,7 @@ import ArrowBackIcon from '../../assets/ArrowBackIcon';
 import PlaceSettings from '../../model/PlaceSettings';
 import colors from '../../constants/colors';
 import styles from '../../constants/styles';
-
+import Toast from 'react-native-simple-toast';
 
 
 
@@ -19,12 +18,13 @@ export default function PlaceAutoCompleteWidget() {
   const instance = PlaceSettings.getInstance();
   const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
   const insets = useSafeAreaInsets();
+  const [autocompleteResultResponse, setAutocompleteResultResponse] = useState<AutocompleteResult | undefined>();
   const [lat, lng] = (instance.location ?? "28.7041,77.1025")
-  .split(",")
-  .map(Number);
+    .split(",")
+    .map(Number);
 
-const searchWidgetProps = {
-  location: [lat, lng],
+  const searchWidgetProps = {
+    location: instance.location.split(",").map(Number),
     backgroundColor: instance.backgroundColor,
     toolbarColor: instance.toolbarColor,
     zoom: parseInt(instance.zoom),
@@ -46,9 +46,8 @@ const searchWidgetProps = {
 
   const handleOnButtonPress3 = async () => {
     try {
-      console.log("handleOnButtonPress3")
       const res = await MapplsUIWidgets.searchWidget(searchWidgetProps);
-
+      setAutocompleteResultResponse(res)
       console.log(res);
     } catch (e) {
       console.log(e);
@@ -58,6 +57,7 @@ const searchWidgetProps = {
   const handleOnButtonPress4 = async () => {
     try {
       const res = await MapplsUIWidgets.searchWidget(searchWidgetProps);
+      setAutocompleteResultResponse(res)
       console.log(res);
     } catch (e) {
       console.log(e);
@@ -93,11 +93,19 @@ const searchWidgetProps = {
         <TouchableOpacity style={styles.button} onPress={handleOnButtonPress4}>
           <Text style={styles.buttonText}>Activity With Full Mode</Text>
         </TouchableOpacity>
+        <ScrollView contentContainerStyle={{ padding: 10, }} >
+                        <Text style={styles.responseText}>
+                            {JSON.stringify(autocompleteResultResponse, null, 2)}
+                        </Text>
+                    </ScrollView>
 
       </View>
+
     </View>
 
   );
 };
+
+
 
 

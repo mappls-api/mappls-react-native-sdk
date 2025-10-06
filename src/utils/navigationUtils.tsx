@@ -14,7 +14,7 @@ import WidgetsIcon from '../assets/WidgetsIcon';
 export type RootStackParamList = {
     Splash: undefined;
     Home: undefined;
-    ListScreen:{ title: string; data: ComponentItem[] };
+    ListScreen: { title: string; data: ComponentItem[] };
     MapEvents: undefined;
     MapLayer: undefined;
     Camera: undefined;
@@ -22,11 +22,11 @@ export type RootStackParamList = {
     Location: undefined;
     Polyline: undefined;
     RestApi: undefined;
-    Utilities:undefined;
+    Utilities: undefined;
     Animation: undefined;
     Widgets: undefined;
     MapTap: undefined;
-    PlaceTap:undefined;
+    PlaceTap: undefined;
     MapLongTap: undefined;
     MapGesture: undefined;
     MapStyleURL: undefined;
@@ -62,7 +62,7 @@ export type RootStackParamList = {
     GetDistanceApi: undefined;
     PoiAlongTheRouteApi: undefined;
     HateOsNearbyApi: undefined;
-    NearByReportApi: undefined;   
+    NearByReportApi: undefined;
     NearByApiSetting: undefined;
     AutoSuggestApiSetting: undefined;
     GeoCodeApiSetting: undefined;
@@ -74,7 +74,10 @@ export type RootStackParamList = {
     PlaceAutoCompleteSetting: undefined;
     TrackingWidgetSetting: undefined;
     PlacePickerWidgetSetting: undefined;
-    Digipin:undefined;
+    Digipin: undefined;
+    DirectionWidgetSetting: undefined;
+    DirectionWidget: undefined;
+    NearByWidget:undefined;
 };
 
 export const menuItems = [
@@ -142,7 +145,7 @@ export const mapEventsData: ComponentItem[] = [
         image: require('../assets/map.png'),
         screen: 'PlaceTap',
     },
-    
+
 ];
 
 export const mapLayerData: ComponentItem[] = [
@@ -239,7 +242,7 @@ export const locationData: ComponentItem[] = [
         image: require('../assets/map.png'),
         screen: 'CurrentLocation'
     },
-   
+
 
 ];
 
@@ -331,7 +334,7 @@ export const restApiData: ComponentItem[] = [
         image: require('../assets/map.png'),
         screen: 'NearByReportApi'
     },
-    
+
 
 ];
 export const animationData: ComponentItem[] = [
@@ -341,7 +344,7 @@ export const animationData: ComponentItem[] = [
         image: require('../assets/map.png'),
         screen: 'AnimateMarker'
     },
-   
+
 ];
 
 export const widgetsData: ComponentItem[] = [
@@ -359,6 +362,35 @@ export const widgetsData: ComponentItem[] = [
         screen: 'TrackingWidget'
     },
 
+    {
+        title: 'Place Picker Widget',
+        subtitle: 'Place Picker to search and choose a specific location',
+        image: require('../assets/map.png'),
+        screen: 'PlacePickerWidget'
+    },
+    {
+        title: 'Direction Widget',
+        subtitle: 'DirectionWidget to show Route on map',
+        image: require('../assets/map.png'),
+        screen:'DirectionWidget'
+    },
+    // {
+    //     title: 'GeoFence Widget',
+    //     subtitle: 'Highly customizable UI widget to create/edit geofence widget',
+    //     image: require('../assets/map.png'),
+    // },
+    {
+        title: 'Nearby Widget',
+        subtitle: 'Mappls Nearby Widget to search nearby result on map',
+        image: require('../assets/map.png'),
+        screen:'NearByWidget'
+    },
+    // {
+    //     title: 'Feedback Widget',
+    //     subtitle: 'Mappls Feedback Widget to give Feedback',
+    //     image: require('../assets/map.png'),
+    // },
+
 ];
 
 export const utilitiData: ComponentItem[] = [
@@ -374,16 +406,16 @@ export const utilitiData: ComponentItem[] = [
 ];
 
 export const screenDataMap: Record<string, ComponentItem[]> = {
-  MapEvents: mapEventsData,
-  MapLayer: mapLayerData,
-  Camera: cameraData,
-  Marker: markerData,
-  Location: locationData,
-  Polyline: polylineData,
-  RestApi: restApiData,
-  Animation: animationData,
-  Widgets: widgetsData,   // typo fixed: widgetsData not widgetData
-  Utilities: utilitiData, // typo fixed: utilitiData not utilityData
+    MapEvents: mapEventsData,
+    MapLayer: mapLayerData,
+    Camera: cameraData,
+    Marker: markerData,
+    Location: locationData,
+    Polyline: polylineData,
+    RestApi: restApiData,
+    Animation: animationData,
+    Widgets: widgetsData,   // typo fixed: widgetsData not widgetData
+    Utilities: utilitiData, // typo fixed: utilitiData not utilityData
 };
 export interface Location {
     latitude: number;

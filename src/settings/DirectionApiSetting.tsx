@@ -99,10 +99,10 @@ export default function DirectionApiSetting() {
                         value={destination.toString()}
                         onChangeText={setDestination}
                         placeholder="Enter Destination"
-                       placeholderTextColor={colors.textSecondary}
+                        placeholderTextColor={colors.textSecondary}
                     />
                     <TouchableOpacity style={styles.button} onPress={() => {
-                        instance.origin = origin;
+                        instance.destination = origin;
                     }}>
                         <Text style={styles.buttonText}>Save Destination Location</Text>
                     </TouchableOpacity>
@@ -180,8 +180,8 @@ export default function DirectionApiSetting() {
                             setAlternatives(value)
                             instance.alternatives = value
                         }}
-                        trackColor={{ true: '#21D0B2', false: '#666' }}
-                        thumbColor="#fff"
+                        trackColor={{ true: colors.switchTrackTrue, false: colors.switchTrackFalse }}
+                        thumbColor={colors.switchThumb}
                     />
                 </View>
                 <View style={styles.toggleRow}>
@@ -192,8 +192,8 @@ export default function DirectionApiSetting() {
                             setEnableSteps(value)
                             instance.steps = value
                         }}
-                        trackColor={{ true: '#21D0B2', false: '#666' }}
-                        thumbColor="#fff"
+                        trackColor={{ true: colors.switchTrackTrue, false: colors.switchTrackFalse }}
+                        thumbColor={colors.switchThumb}
                     />
                 </View>
                 <View style={styles.toggleRow}>
@@ -204,8 +204,8 @@ export default function DirectionApiSetting() {
                             setRouteRefresh(value)
                             instance.routeRefresh = value
                         }}
-                        trackColor={{ true: '#21D0B2', false: '#666' }}
-                        thumbColor="#fff"
+                        trackColor={{ true: colors.switchTrackTrue, false: colors.switchTrackFalse }}
+                        thumbColor={colors.switchThumb}
                     />
                 </View>
 

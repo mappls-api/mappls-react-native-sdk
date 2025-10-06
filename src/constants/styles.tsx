@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
         backgroundColor: colors.backgroundPrimary,
         borderBottomWidth: 1,
         borderBottomColor: colors.strokeBorder,
+        zIndex: 20,
     },
     leftSection: {
         flexDirection: "row",
@@ -101,7 +102,6 @@ const styles = StyleSheet.create({
     },
     overlay: {
         position: "absolute",
-        top: 10,
         right: 10,
         backgroundColor: colors.backgroundSecondry,
         padding: 12,
@@ -163,6 +163,7 @@ const styles = StyleSheet.create({
     responseText: {
         color: colors.textPrimary,
         fontSize: 14,
+        paddingVertical: 30
     },
     bottomToggleContainer: {
         flexDirection: "row",
@@ -402,7 +403,7 @@ const styles = StyleSheet.create({
         position: 'absolute',
         bottom: 0,
         width: "100%",
-        backgroundColor: colors.backgroundPrimary 
+        backgroundColor: colors.backgroundPrimary
     },
     trackingButton: {
         marginHorizontal: 5,
@@ -414,6 +415,37 @@ const styles = StyleSheet.create({
         borderColor: colors.accentPrimary,
         alignItems: 'center',
     },
+    loadingContainer: {
+        ...StyleSheet.absoluteFillObject,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'rgba(255,255,255,0.8)',
+        zIndex: 1000,
+    },
+    loadingText: {
+        marginTop: 10,
+        fontSize: 16,
+        color: '#000',
+    },
+    radioContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    radioCircle: {
+        width: 18,
+        height: 18,
+        borderRadius: 9,
+        borderWidth: 2,
+
+        borderColor: colors.strokeBorder,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    selectedCircle: {
+        borderColor: colors.accentPrimary,
+        backgroundColor: colors.accentPrimary,
+    },
+
 });
 
 export default styles;

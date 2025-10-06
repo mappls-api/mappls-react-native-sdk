@@ -6,8 +6,8 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../utils/navigationUtils';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Camera, getCoordinateFromDigipin, getDigipinFromCoordinate, MapView } from 'mappls-map-react-native';
-import colors from '../../constants/colors';
 import styles from '../../constants/styles';
+import colors from '../../constants/colors';
 
 
 
@@ -130,7 +130,7 @@ export default function Digipin() {
                             height: 40,
                             color: "white",
                             borderWidth: 1,
-                            borderColor: "#fff",
+                             borderColor: colors.strokeBorder,
                             borderRadius: 8,
                             paddingHorizontal: 12,
                         }}
@@ -187,4 +187,3 @@ export default function Digipin() {
         </View>
     );
 }
-

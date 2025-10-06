@@ -19,7 +19,6 @@ import { NearbyAtlasResponse } from 'mappls-map-react-native/src/modules/restApi
 import { MapplsNearbyApiSettings } from '../../model/MapplsNearbyApiSettings';
 import { bbox, lineString } from '@turf/turf';
 import { Camera, CameraRef, MapView, PointAnnotation, PointAnnotationRef, RestApi } from 'mappls-map-react-native';
-import colors from '../../constants/colors';
 import styles from '../../constants/styles';
 const MarkerIcon = require('../../assets/settings.png');
 
@@ -51,6 +50,14 @@ export default function NearbyApi() {
                 location: instance.customLocation,
                 page: instance.page,
                 radius: instance.radius,
+                pod: instance.pod,
+                bounds: instance.bounds,
+                filter: instance.filter,
+                searchBy: instance.searchBy,
+                sortBy: instance.sortBy,
+                explain: instance.enableExplain,
+                richData: instance.enableRichData,
+                userName: instance.userName
             });
             setNearbyAtlasResponse(data)
             if (data?.suggestedLocations) {
@@ -89,6 +96,12 @@ export default function NearbyApi() {
 
         }, [])
     );
+    useEffect(() => {
+        if (!visibleList) {
+            callNearby();
+        }
+    }, [visibleList])
+
     const onPressMap = (event: any) => {
         const { geometry } = event;
         const longitude = geometry.coordinates[0];
@@ -125,7 +138,7 @@ export default function NearbyApi() {
                     <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backBtn}>
                         <ArrowBackIcon />
                     </TouchableOpacity>
-                    <Text style={styles.headerTitle}>Nearby Places</Text>
+                    <Text style={styles.headerTitle}>Nearby Places Api</Text>
                 </View>
 
                 {/* Right side: Settings icon */}
@@ -137,8 +150,8 @@ export default function NearbyApi() {
                     />
                 </TouchableOpacity>
             </View>
-            {/* Map / List Toggle */}
-            <View style={styles.toggleContainer}>
+  {/* Map / List Toggle */}
+            <View style={[styles.toggleContainer]}>
                 <TouchableOpacity
                     style={[styles.toggleBtn, selected === 'map' && styles.activeBtn]}
                     onPress={() => {
@@ -187,7 +200,8 @@ export default function NearbyApi() {
                         style={{ flex: 1, }}
                         onPress={onPressMap}
                     >
-                        <Camera zoomLevel={12} ref={cameraRef} />
+                        <Camera zoomLevel={12} ref={cameraRef}
+                        />
                         {nearByApiData.length > 0 &&
                             nearByApiData.map((item, indx) => (
                                 <PointAnnotation
@@ -204,6 +218,8 @@ export default function NearbyApi() {
                     </MapView>
                 </View>
             )}
+
+          
             {bottomSelected === 'response' && nearbyAtlasResponse && (
                 <View
                     style={[
@@ -249,3 +265,5 @@ export default function NearbyApi() {
 
     );
 }
+
+

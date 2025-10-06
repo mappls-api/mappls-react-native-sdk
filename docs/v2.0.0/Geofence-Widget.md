@@ -8,7 +8,7 @@ A ready to use UI Widget to create/edit GeoFence in a React Native application.
 ## [Version History]()
 | Version | Last Updated      | Author | Release Note                                                                                                                                                                                         | 
 |---------|-------------------| ---- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| v2.0.0  | 19 Aug, 2025     | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) | - Authentication and authorization mechanisms have been revised. </br> - Updated minimum Android version to 21. </br> - Added Support for 16 KB Page Sizes </br> - Added SPM(Swift Package Manager Support) for IOS.                                                                                     |
+| v2.0.0  | 06 Oct, 2025     | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) | - Authentication and authorization mechanisms have been revised. </br> - Updated minimum Android version to 21. </br> - Added Support for 16 KB Page Sizes </br> - Added SPM(Swift Package Manager Support) for IOS.                                                                                     |
 
 ## Installation
 * First install `mappls-geofence-widget-react-native`:
@@ -39,7 +39,6 @@ npm install mappls-map-react-native
 #### Import 
 ```javascript
 import  MapplsGeoFence  from  'mappls-geofence-widget-react-native';
-import  MapplsGL  from  'mappls-map-react-native';
 ```
 #### Open MapplsGeoFence Widget  
 

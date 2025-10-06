@@ -81,11 +81,14 @@ android {
 
     namespace "com.mapplsrndemo"
     defaultConfig {
-        applicationId "com.mappls.sdk.rn.demo.internal"
+        applicationId "com.mappls.sdk.rn.demo"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+    }
+    buildFeatures{
+       dataBinding = true
     }
     signingConfigs {
         debug {

@@ -47,10 +47,15 @@ import PoiAlongTheRouteApiSetting from '../settings/PoiAlongTheRouteApiSetting';
 import NearByReportApi from './restAPI/NearByReportApi';
 import TrackingWidgetSetting from '../settings/TrackingWidgetSetting';
 import PlaceAutoCompleteSetting from '../settings/PlaceAutoCompleteSetting';
+import PlacePickerWidget from './widgets/PlacePickerWidget';
+import PlacePickerWidgetSetting from '../settings/PlacePickerWidgetSetting';
 import PlaceTap from './mapEvent/PlaceTap';
 import Digipin from './utility/Digipin';
 import ListScreen from '../components/ListScreen';
 import DirectionApiSetting from '../settings/DirectionApiSetting';
+import DirectionWidget from './widgets/DirectionWidget';
+import DirectionWidgetSetting from '../settings/DirectionWidgetSetting';
+import NearByWidget from './widgets/NearByWidget';
 
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -108,7 +113,12 @@ function App() {
           <Stack.Screen name="PoiAlongTheRouteApiSetting" component={PoiAlongTheRouteApiSetting} />
           <Stack.Screen name="TrackingWidgetSetting" component={TrackingWidgetSetting} />
           <Stack.Screen name="PlaceAutoCompleteSetting" component={PlaceAutoCompleteSetting} />
-          
+          <Stack.Screen name="PlacePickerWidget" component={PlacePickerWidget} />
+          <Stack.Screen name="PlacePickerWidgetSetting" component={PlacePickerWidgetSetting} />
+          <Stack.Screen name='DirectionWidget' component={DirectionWidget} />
+          <Stack.Screen name='DirectionWidgetSetting' component={DirectionWidgetSetting} />
+          <Stack.Screen name='NearByWidget' component={NearByWidget} />
+
 
         </Stack.Navigator>
       </NavigationContainer>

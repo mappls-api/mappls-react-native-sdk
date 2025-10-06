@@ -2,20 +2,26 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import RadioButtonRN from 'radio-buttons-react-native';
 import colors from '../constants/colors';
+import { DirectionsCriteria } from 'mappls-direction-widget-react-native';
 
-type RadioDataItem = {
+
+type RadioDataItem<T> = {
   label: string;
-  value: string;
+  value: T;
 };
-
-type Props = {
+// type Props = {
+//   label: string;
+//   data: RadioDataItem[];
+//   index: number;
+//   callback: (selected: RadioDataItem) => void;
+// };
+type RadioProps<T> = {
   label: string;
-  data: RadioDataItem[];
+  data: RadioDataItem<T>[];
   index: number;
-  callback: (selected: RadioDataItem) => void;
+  callback: (selected: RadioDataItem<T>) => void;
 };
-
-const RadioGroups: React.FC<Props> = ({ label, data, index, callback }) => {
+const RadioGroups = <T,>({ label, data, index, callback }: RadioProps<T>) => {
   return (
     <View>
       {/* Title */}
