@@ -14,9 +14,9 @@ Powered with India's most comprehensive and robust mapping functionalities.
 
 ## [Documentation History](#Documentation-History)
 
-| Version | Supported SDK Version |  
-| ---- | ---- |    
-| [v1.0.5](docs/v1.0.5/README.md) | - Map SDK v1.1.1 <br/> - Place Search Widget v1.3.3 <br/> - GeoFence Widget v1.0.1 <br/> - Direction Widget v1.1.2 <br/> - Nearby UI Widget v1.0.0 <br/> - Mappls Polyline v1.0.0 | 
+| Version | Supported SDK Version                                                                                                                                                              |  
+| ---- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|    
+| [v1.0.5](docs/v1.0.5/README.md) | - Map SDK v1.1.2 <br/> - Place Search Widget v1.3.3 <br/> - GeoFence Widget v1.0.1 <br/> - Direction Widget v1.1.2 <br/> - Nearby UI Widget v1.0.2 <br/> - Mappls Polyline v1.0.0  | 
 | [v1.0.4](docs/v1.0.4/README.md) | - Map SDK v1.0.12 <br/> - Place Search Widget v1.3.1 <br/> - GeoFence Widget v1.0.0 <br/> - Direction Widget v1.1.0 <br/> - Nearby UI Widget v1.0.0 <br/> - Mappls Polyline v1.0.0 |  
 | [v1.0.3](docs/v1.0.3/README.md) | - Map SDK v1.0.10 <br/> - Place Search Widget v1.3.0 <br/> - GeoFence Widget v1.0.0 <br/> - Direction Widget v1.1.0 <br/> - Nearby UI Widget v1.0.0 <br/> - Mappls Polyline v1.0.0 |  
 
@@ -27,11 +27,11 @@ For more details of previous documentation versions , [click here](docs/v1.0.5/D
 
 | Version | Last Updated | Author |  Release Note|  
 | ---- | ---- | ---- | ---- |
+| v1.1.2 | 17 July 2026 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) | - Bug Fixes and Security Enhancement  |
 | v1.1.1 | 29 September 2025 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) | - Added 16KB Support in android  |
 | v1.1.0 | 27 August 2025 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) | - Added New Architecture Support  |
 | v1.0.12 | 03 March 2025 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) | - Bug Fixes and Security Enhancement  |
 | v1.0.11 | 03 February 2025 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Added `DigipinUtility` for getting DIGIPIN from Coordinates and vice versa </br> - Added Internal Retry </br> - Bug Fixes and Security Enhancement  |
-| v1.0.10 | 19 December 2024 | Mappls API Team ([MA](https://github.com/mdakram)) ([ST](https://github.com/saksham66)) |  - Added option to set Base url in Search and Routing Apis </br> - Added Fuel Cost Api </br> - Added Route Report Summary Api </br> - Added Category Master API  |
 
 For more details of previous versions , [click here](docs/v1.0.5/Version-History.md).
 
@@ -105,7 +105,7 @@ Need support? contact us!
 
 
 
-<div align="center">@ Copyright 2025 CE Info Systems Ltd. All Rights Reserved.</div>
+<div align="center">@ Copyright 2026 CE Info Systems Ltd. All Rights Reserved.</div>
 
 <div align="center"> <a href="https://about.mappls.com/api/terms-&-conditions">Terms & Conditions</a> | <a href="https://about.mappls.com/about/privacy-policy">Privacy Policy</a> | <a href="https://about.mappls.com/pdf/mapmyIndia-sustainability-policy-healt-labour-rules-supplir-sustainability.pdf">Supplier Sustainability Policy</a> | <a href="https://about.mappls.com/pdf/Health-Safety-Management.pdf">Health & Safety Policy</a> | <a href="https://about.mappls.com/pdf/Environment-Sustainability-Policy-CSR-Report.pdf">Environmental Policy & CSR Report</a>
 

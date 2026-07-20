@@ -125,8 +125,9 @@ try {
     -   `filter`  = model:(string);brandId:(string);plugType:(string)
 7.  `richData(Boolean)`: Rich Data related to POI
 8.  `userName(String)`: Use to set the user name
- * **categoryCodes**(Array[Object]): You can set array of `categoryCodes` with following  parameters:
- 1.  `category (String)`: Name of the category that display on a view
+
+* **categoryCodes**(Array[Object]): You can set array of `categoryCodes` with following  parameters:
+1.  `category (String)`: Name of the category that display on a view
 2.  `icon(image)`: To show icon of category, example:- icon:Image.resolveAssetSource(require('./coffee.png'))
 3.  `categoryCode (Array<String>)`: List of category codes
 4.  `markerIcon (image)`: Marker icon to display on a map , example:- icon:Image.resolveAssetSource(require('./marker.png'))
@@ -155,7 +156,7 @@ Need support? contact us!
 
 
 
-<div align="center">@ Copyright 2025 CE Info Systems Ltd. All Rights Reserved.</div>
+<div align="center">@ Copyright 2026 CE Info Systems Ltd. All Rights Reserved.</div>
 
 <div align="center"> <a href="https://about.mappls.com/api/terms-&-conditions">Terms & Conditions</a> | <a href="https://about.mappls.com/about/privacy-policy">Privacy Policy</a> | <a href="https://about.mappls.com/pdf/mapmyIndia-sustainability-policy-healt-labour-rules-supplir-sustainability.pdf">Supplier Sustainability Policy</a> | <a href="https://about.mappls.com/pdf/Health-Safety-Management.pdf">Health & Safety Policy</a> | <a href="https://about.mappls.com/pdf/Environment-Sustainability-Policy-CSR-Report.pdf">Environmental Policy & CSR Report</a>
 
