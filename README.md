@@ -79,6 +79,7 @@ For more details of previous documentation versions , [click here](docs/v2.0.1/D
 - [Mappls Geofence Widget](docs/v2.0.1/Geofence-Widget.md)
     * [Getting started](docs/v2.0.1/Geofence-Widget.md#getting-started)
     * [Geofence Widget](docs/v2.0.1/Geofence-Widget.md#open-mapplsgeofence-widget)
+- [Mappls Tracking widget](docs/v2.0.1/Tracking%20Widget.md)
 - [SDK Error Codes](docs/v2.0.1/SDK-Error-code.md)
 - [Version History](docs/v2.0.1/Version-History.md)
 - [Country List](https://github.com/mappls-api/mappls-rest-apis/blob/main/docs/countryISO.md)
